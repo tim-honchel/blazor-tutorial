@@ -1,0 +1,14 @@
+C:\Users\thonchel\source\repos\MyBlog\MyBlog.Data\bin\Debug\net7.0\MyBlog.Data.deps.json
+C:\Users\thonchel\source\repos\MyBlog\MyBlog.Data\bin\Debug\net7.0\MyBlog.Data.runtimeconfig.json
+C:\Users\thonchel\source\repos\MyBlog\MyBlog.Data\bin\Debug\net7.0\MyBlog.Data.dll
+C:\Users\thonchel\source\repos\MyBlog\MyBlog.Data\bin\Debug\net7.0\MyBlog.Data.pdb
+C:\Users\thonchel\source\repos\MyBlog\MyBlog.Data\obj\Debug\net7.0\MyBlog.Data.csproj.AssemblyReference.cache
+C:\Users\thonchel\source\repos\MyBlog\MyBlog.Data\obj\Debug\net7.0\MyBlog.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thonchel\source\repos\MyBlog\MyBlog.Data\obj\Debug\net7.0\MyBlog.Data.AssemblyInfoInputs.cache
+C:\Users\thonchel\source\repos\MyBlog\MyBlog.Data\obj\Debug\net7.0\MyBlog.Data.AssemblyInfo.cs
+C:\Users\thonchel\source\repos\MyBlog\MyBlog.Data\obj\Debug\net7.0\MyBlog.Data.csproj.CoreCompileInputs.cache
+C:\Users\thonchel\source\repos\MyBlog\MyBlog.Data\obj\Debug\net7.0\MyBlog.Data.dll
+C:\Users\thonchel\source\repos\MyBlog\MyBlog.Data\obj\Debug\net7.0\refint\MyBlog.Data.dll
+C:\Users\thonchel\source\repos\MyBlog\MyBlog.Data\obj\Debug\net7.0\MyBlog.Data.pdb
+C:\Users\thonchel\source\repos\MyBlog\MyBlog.Data\obj\Debug\net7.0\MyBlog.Data.genruntimeconfig.cache
+C:\Users\thonchel\source\repos\MyBlog\MyBlog.Data\obj\Debug\net7.0\ref\MyBlog.Data.dll

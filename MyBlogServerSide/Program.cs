@@ -1,6 +1,11 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
+using Microsoft.EntityFrameworkCore;
+using MyBlog.Data;
+using MyBlog.Data.Interfaces;
 using MyBlogServerSide.Data;
+
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +13,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
+builder.Services.AddDbContextFactory<MyBlogDbContext>(opt => opt.UseSqlite($"Data Source=../MyBlog.db"));
+builder.Services.AddScoped<IMyBlogApi, MyBlogApiServerSide>();
+builder.Services.Configure<MyBlogDbContextFactory>(options => options.CreateDbContext().Database.Migrate());
 
 var app = builder.Build();
 
@@ -29,3 +37,10 @@ app.MapBlazorHub();
 app.MapFallbackToPage("/_Host");
 
 app.Run();
+
+//void configure(iapplicationbuilder app, iwebhostenvironment env, idbcontextfactory<myblogdbcontext> factory)
+//{
+//    factory.createDbContext().database.migrate();
+//}
+
+// TODO: figure out how to include the code that was meant to go in Startup.cs, which doesn't exist

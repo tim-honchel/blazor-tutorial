@@ -1,9 +1,40 @@
 ﻿@page "/"
+@using MyBlog.Data.Interfaces
+@using MyBlog.Data.Models
+@inject IMyBlogApi api
 
-<PageTitle>Index</PageTitle>
+<button @onclick="AddSomePosts">Add some fake posts</button>
+<br />
+<br />
+<ul>
+    @foreach (var p in posts)
+    {
+        <li>@p.Title</li>
+    }
+</ul>
 
-<h1>Hello, world!</h1>
+@code
+{
+    protected List<BlogPost> posts = new List<BlogPost>();
 
-Welcome to your new app.
+    protected async Task AddSomePosts()
+    {
+        for (int i = 1; i <= 10; i++)
+        {
+            await api.SaveBlogPostAsync(new BlogPost() // TODO: causes runtime error
+                {
+                    PublishDate = DateTime.Now,
+                    Title = $"Blog post {i}",
+                    Text = "Text"
+                });
+        }
+    }
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+    protected override async Task OnInitializedAsync()
+    {
+        //posts = await api.GetBlogPostsAsync(10, 0); // TODO: causes runtime error
+        await base.OnInitializedAsync();
+    }
+}
+
+

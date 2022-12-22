@@ -46,7 +46,7 @@ namespace MyBlog.Data.Migrations
                     Title = table.Column<string>(type: "TEXT", nullable: false),
                     Text = table.Column<string>(type: "TEXT", nullable: false),
                     PublishDate = table.Column<DateTime>(type: "TEXT", nullable: false),
-                    CategoryId = table.Column<int>(type: "INTEGER", nullable: false)
+                    CategoryId = table.Column<int>(type: "INTEGER", nullable: true)
                 },
                 constraints: table =>
                 {

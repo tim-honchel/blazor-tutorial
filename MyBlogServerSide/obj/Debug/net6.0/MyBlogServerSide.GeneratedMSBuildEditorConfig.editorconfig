@@ -52,6 +52,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFyZW50Q291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/thonchel/source/repos/MyBlog/MyBlogServerSide/Pages/Post.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9zdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thonchel/source/repos/MyBlog/MyBlogServerSide/Pages/SetFocus.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2V0Rm9jdXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/thonchel/source/repos/MyBlog/MyBlogServerSide/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 

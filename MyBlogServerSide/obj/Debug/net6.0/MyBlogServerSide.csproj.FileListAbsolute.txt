@@ -76,3 +76,7 @@ C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\bin\Debug\net6.0\runtimes
 C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\bin\Debug\net6.0\MyBlog.Data.dll
 C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\bin\Debug\net6.0\MyBlog.Data.pdb
 C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\obj\Debug\net6.0\MyBlogServerSide.csproj.CopyComplete
+C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\bin\Debug\net6.0\Humanizer.dll
+C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\bin\Debug\net6.0\Mono.TextTemplating.dll
+C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\bin\Debug\net6.0\System.CodeDom.dll

@@ -121,12 +121,6 @@ namespace MyBlog.Data
         {
             return (await SaveItem(item)) as Tag;
         }
-        public void GetTableNames()
-        {
-            using var context = factory.CreateDbContext();
-            var tableNames = context.Model.GetEntityTypes().Select(t => t.GetTableName()).Distinct().ToList();
-            Console.WriteLine(tableNames);
-        }
 
     }
 }

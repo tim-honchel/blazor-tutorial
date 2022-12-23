@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "MyBlog.Data/1.0.0": {
         "dependencies": {
+          "Microsoft.EntityFrameworkCore.Design": "7.0.1",
           "Microsoft.EntityFrameworkCore.Sqlite": "7.0.1",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.1"
         },

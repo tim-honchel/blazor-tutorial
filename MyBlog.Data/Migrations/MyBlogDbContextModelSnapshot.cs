@@ -34,7 +34,7 @@ namespace MyBlog.Data.Migrations
 
             modelBuilder.Entity("MyBlog.Data.Models.BlogPost", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int?>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
@@ -61,7 +61,7 @@ namespace MyBlog.Data.Migrations
 
             modelBuilder.Entity("MyBlog.Data.Models.Category", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int?>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
@@ -76,7 +76,7 @@ namespace MyBlog.Data.Migrations
 
             modelBuilder.Entity("MyBlog.Data.Models.Tag", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int?>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 

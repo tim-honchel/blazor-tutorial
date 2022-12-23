@@ -20,8 +20,24 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/thonchel/source/repos/MyBlog/MyBlogServerSide/Components/Alert.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBbGVydC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thonchel/source/repos/MyBlog/MyBlogServerSide/Pages/AlertTest.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWxlcnRUZXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/thonchel/source/repos/MyBlog/MyBlogServerSide/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thonchel/source/repos/MyBlog/MyBlogServerSide/Pages/CounterWithParameter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlcldpdGhQYXJhbWV0ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thonchel/source/repos/MyBlog/MyBlogServerSide/Pages/CounterWithParameterAndEvent.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlcldpdGhQYXJhbWV0ZXJBbmRFdmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/thonchel/source/repos/MyBlog/MyBlogServerSide/Pages/FetchData.razor]
@@ -30,6 +46,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/thonchel/source/repos/MyBlog/MyBlogServerSide/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/thonchel/source/repos/MyBlog/MyBlogServerSide/Pages/ParentCounter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFyZW50Q291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/thonchel/source/repos/MyBlog/MyBlogServerSide/Shared/SurveyPrompt.razor]

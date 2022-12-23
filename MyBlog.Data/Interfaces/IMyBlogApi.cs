@@ -25,7 +25,5 @@ namespace MyBlog.Data.Interfaces
         Task DeleteBlogPostAsync(BlogPost item);
         Task DeleteCategoryAsync(Category item);
         Task DeleteTagAsync(Tag item);
-
-        void GetTableNames();
     }
 }

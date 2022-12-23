@@ -7,19 +7,16 @@
 <br />
 <br />
 <ul>
-    @foreach (var p in posts)
-    {
+    <Virtualize ItemsProvider="LoadPosts" Context="p">
         <li><a href="/Post/@p.Id">@p.Title</a></li>
-    }
+    </Virtualize>
 </ul>
 
 @code
 {
-    protected List<BlogPost> posts = new List<BlogPost>();
-
     protected async Task AddSomePosts()
     {
-        
+
         var category = new Category() { Name = "New Category" };
         try
         {
@@ -39,33 +36,22 @@
                     Text = "Text",
                     Category = category
                 };
-            try
-            {
-                await api.SaveBlogPostAsync(post); // TODO: causes runtime error
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-                posts.Add(post);
-            }
-
+            await api.SaveBlogPostAsync(post); // TODO: causes runtime error
         }
     }
-
-    protected override async Task OnInitializedAsync()
+    public int totalBlogPosts { get; set; }
+    private async ValueTask<ItemsProviderResult<BlogPost>>LoadPosts(ItemsProviderRequest request)
     {
-        try
+        if (totalBlogPosts == 0)
         {
-            posts = await api.GetBlogPostsAsync(10, 0); // TODO: causes runtime error
+            totalBlogPosts = await api.GetBlogPostCountAsync();
         }
-        catch (Exception e)
-        {
-            Console.WriteLine(e);
-            posts = new List<BlogPost>();
-        }
-
-        await base.OnInitializedAsync();
+        var numBlogPosts = Math.Min(request.Count, totalBlogPosts - request.StartIndex);
+        var blogPosts = await api.GetBlogPostsAsync(numBlogPosts, request.StartIndex);
+        return new ItemsProviderResult<BlogPost>(blogPosts, totalBlogPosts);
     }
+
+
 }
 
 

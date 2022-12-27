@@ -1,10 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "5BihScPZRrRcCRHw5tDdya0ANQXAe8WoieRRfjnTfMVG65qMFJMKjsKnUjnt57HEWLRsSur8f5ZnKFzgUXHfHQ==",
+  "dgSpecHash": "J+S6Ae+QK9IkamHd6+cMaz/YUWcWwZQeQAQudwawA9yoK1WXbED6mzY7tQhXazPW0S0vJNEuEjd6zFrqPDF8eA==",
   "success": true,
   "projectFilePath": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogServerSide\\MyBlogServerSide.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\thonchel\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\thonchel\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.10\\microsoft.aspnetcore.authorization.6.0.10.nupkg.sha512",
+    "C:\\Users\\thonchel\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.10\\microsoft.aspnetcore.components.6.0.10.nupkg.sha512",
+    "C:\\Users\\thonchel\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\6.0.10\\microsoft.aspnetcore.components.analyzers.6.0.10.nupkg.sha512",
+    "C:\\Users\\thonchel\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\6.0.10\\microsoft.aspnetcore.components.forms.6.0.10.nupkg.sha512",
+    "C:\\Users\\thonchel\\.nuget\\packages\\microsoft.aspnetcore.metadata\\6.0.10\\microsoft.aspnetcore.metadata.6.0.10.nupkg.sha512",
     "C:\\Users\\thonchel\\.nuget\\packages\\microsoft.data.sqlite.core\\7.0.1\\microsoft.data.sqlite.core.7.0.1.nupkg.sha512",
     "C:\\Users\\thonchel\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.1\\microsoft.entityframeworkcore.7.0.1.nupkg.sha512",
     "C:\\Users\\thonchel\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.1\\microsoft.entityframeworkcore.abstractions.7.0.1.nupkg.sha512",

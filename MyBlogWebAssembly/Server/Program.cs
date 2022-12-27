@@ -1,6 +1,22 @@
 using Microsoft.AspNetCore.ResponseCompression;
+using MyBlogWebAssembly.Server;
 
-var builder = WebApplication.CreateBuilder(args);
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        CreateHostBuilder(args).Build().Run();
+    }
+
+    public static IHostBuilder CreateHostBuilder(string[] args) =>
+        Host.CreateDefaultBuilder(args)
+            .ConfigureWebHostDefaults(webBuilder =>
+            {
+                webBuilder.UseStartup<Startup>();
+            });
+}
+
+/*var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
@@ -33,4 +49,4 @@ app.MapRazorPages();
 app.MapControllers();
 app.MapFallbackToFile("index.html");
 
-app.Run();
+app.Run();*/

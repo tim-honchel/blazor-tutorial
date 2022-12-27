@@ -8,9 +8,11 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="6.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.1" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\MyBlog.data\MyBlog.Data.csproj" />
     <ProjectReference Include="..\Client\MyBlogWebAssembly.Client.csproj" />
     <ProjectReference Include="..\Shared\MyBlogWebAssembly.Shared.csproj" />
   </ItemGroup>

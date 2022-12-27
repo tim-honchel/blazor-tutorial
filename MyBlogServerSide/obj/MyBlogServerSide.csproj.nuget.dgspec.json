@@ -117,6 +117,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Markdig": {
+              "target": "Package",
+              "version": "[0.30.4, )"
+            },
             "Microsoft.AspNetCore.Components.Forms": {
               "target": "Package",
               "version": "[6.0.10, )"

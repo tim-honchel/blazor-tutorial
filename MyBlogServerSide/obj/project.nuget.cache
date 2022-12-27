@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "J+S6Ae+QK9IkamHd6+cMaz/YUWcWwZQeQAQudwawA9yoK1WXbED6mzY7tQhXazPW0S0vJNEuEjd6zFrqPDF8eA==",
+  "dgSpecHash": "1sTWlZwbBqmVkOdE9nsb5JUsKPrj0Xj3H4PEoBt5VAPgRGYixrlDxVTm+GQF+MuWDPQLIXT7LkDAr1zMCEtUig==",
   "success": true,
   "projectFilePath": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogServerSide\\MyBlogServerSide.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\thonchel\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\thonchel\\.nuget\\packages\\markdig\\0.30.4\\markdig.0.30.4.nupkg.sha512",
     "C:\\Users\\thonchel\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.10\\microsoft.aspnetcore.authorization.6.0.10.nupkg.sha512",
     "C:\\Users\\thonchel\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.10\\microsoft.aspnetcore.components.6.0.10.nupkg.sha512",
     "C:\\Users\\thonchel\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\6.0.10\\microsoft.aspnetcore.components.analyzers.6.0.10.nupkg.sha512",

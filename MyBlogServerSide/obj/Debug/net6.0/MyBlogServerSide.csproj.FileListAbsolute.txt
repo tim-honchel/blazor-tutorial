@@ -84,3 +84,4 @@ C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\bin\Debug\net6.0\Microsof
 C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\bin\Debug\net6.0\Microsoft.AspNetCore.Components.dll
 C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Forms.dll
 C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\bin\Debug\net6.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\bin\Debug\net6.0\Markdig.dll

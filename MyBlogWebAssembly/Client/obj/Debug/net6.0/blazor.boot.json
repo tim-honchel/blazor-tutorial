@@ -200,14 +200,14 @@
       "netstandard.dll": "sha256-yWufW5W4SSfjocBcWTEDqnFwTd\/VYtLMc2Y9mPmlggc=",
       "System.Private.CoreLib.dll": "sha256-H009wzPwRoDZlwvpN4KLCsUwN7Y1AmjKB3PIEHA7ObQ=",
       "MyBlogWebAssembly.Shared.dll": "sha256-r\/LvU4UXSMTo6Oe29H7oXvgrHY0ugVPI5T7Hltj5xDE=",
-      "MyBlogWebAssembly.Client.dll": "sha256-Q7IWTKTsFUsF+C3VMHS0Egl7Kbyq+uOmivCMxlbBPCM="
+      "MyBlogWebAssembly.Client.dll": "sha256-2lrc2KwL2sHqgXd2wOb6SQRSkejcJcVR0Z2+A8VB6tE="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
       "MyBlogWebAssembly.Shared.pdb": "sha256-z03NnGc8VHcD8QpjIB5beFTEEFeBz2XMfzdiAt4DzXc=",
-      "MyBlogWebAssembly.Client.pdb": "sha256-\/T5tYP3hm0AxPXhzEt7+TpQydmCc+Sm9YfOTa4UaSQo="
+      "MyBlogWebAssembly.Client.pdb": "sha256-gp6A9k8B5YSAYcjlsO1qsk6Cx0oRlaJRsDtkPyUHaTQ="
     },
     "runtime": {
       "dotnet.6.0.11.nts7bn91vh.js": "sha256-F30V+6jU3jwJYFZoLuwMAqzTiOXu6q7zGgOdjYBofDI=",

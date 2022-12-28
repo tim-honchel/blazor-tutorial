@@ -11,6 +11,8 @@ using System.Linq;
 using MyBlog.Data.Interfaces;
 using MyBlog.Data.Models;
 using Microsoft.AspNetCore.Authentication;
+using System.IdentityModel.Tokens.Jwt;
+using Microsoft.AspNetCore.Identity;
 
 namespace MyBlogWebAssembly.Server
 {
@@ -34,8 +36,14 @@ namespace MyBlogWebAssembly.Server
             services.AddControllersWithViews();
             services.AddRazorPages();
             services.AddDbContext<MyBlogDbContext>(opt => opt.UseSqlite(Configuration.GetConnectionString("MyBlogDB")));
-            services.AddDefaultIdentity<AppUser>(options => options.SignIn.RequireConfirmedAccount = false).AddEntityFrameworkStores<MyBlogDbContext>();
-            services.AddIdentityServer().AddApiAuthorization<AppUser, MyBlogDbContext>();
+            services.AddDefaultIdentity<AppUser>(options => options.SignIn.RequireConfirmedAccount = false).AddRoles<IdentityRole>().AddEntityFrameworkStores<MyBlogDbContext>();
+            services.AddIdentityServer().AddApiAuthorization<AppUser, MyBlogDbContext>(options =>
+            {
+                options.IdentityResources["openid"].UserClaims.Add("name");
+                options.ApiResources.Single().UserClaims.Add("name");
+                options.IdentityResources["openid"].UserClaims.Add("role"); options.ApiResources.Single().UserClaims.Add("role");
+            });
+            JwtSecurityTokenHandler.DefaultInboundClaimFilter.Remove("role");
             services.AddAuthentication().AddIdentityServerJwt();
         }
 

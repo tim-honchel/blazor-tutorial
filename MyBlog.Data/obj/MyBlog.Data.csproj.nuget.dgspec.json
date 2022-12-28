@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Data\\MyBlog.Data.csproj": {}
+    "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.data\\MyBlog.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Data\\MyBlog.Data.csproj": {
+    "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.data\\MyBlog.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Data\\MyBlog.Data.csproj",
+        "projectUniqueName": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.data\\MyBlog.Data.csproj",
         "projectName": "MyBlog.Data",
-        "projectPath": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Data\\MyBlog.Data.csproj",
+        "projectPath": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.data\\MyBlog.Data.csproj",
         "packagesPath": "C:\\Users\\thonchel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Data\\obj\\",
+        "outputPath": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\thonchel\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.ApiAuthorization.IdentityServer": {
+              "target": "Package",
+              "version": "[6.0.12, )"
+            },
             "Microsoft.AspNetCore.Components.WebAssembly.Authentication": {
               "target": "Package",
               "version": "[6.0.1, )"

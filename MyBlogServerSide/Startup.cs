@@ -1,7 +1,21 @@
-﻿using Microsoft.EntityFrameworkCore;
-using MyBlog.Data.Interfaces;
+﻿using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Components.Authorization;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using MyBlog.Data;
+using MyBlog.Data.Interfaces;
+using MyBlog.Data.Models;
+//<authusing>
+using MyBlogServerSide.Authentication;
+//</authusing>
 using MyBlogServerSide.Data;
+//<IdentityServerUsing>
+using Microsoft.Extensions.Options;
+//</IdentityServerUsing>
 
 namespace MyBlogServerSide
 {
@@ -24,9 +38,14 @@ namespace MyBlogServerSide
             services.AddServerSideBlazor();
             services.AddSingleton<WeatherForecastService>();
             //<AddMyBlogDataServices>
-            services.AddDbContextFactory<MyBlogDbContext>(opt => opt.UseSqlite($"Data Source=../MyBlog.db"));
+            services.AddDbContextFactory<MyBlogDbContext>(opt => opt.UseSqlite(Configuration.GetConnectionString("MyBlogDB")));
             services.AddScoped<IMyBlogApi, MyBlogApiServerSide>();
             //</AddMyBlogDataServices>
+            services.AddDbContext<MyBlogDbContext>(opt => opt.UseSqlite(Configuration.GetConnectionString("MyBlogDB")));
+            services.AddDefaultIdentity<AppUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<MyBlogDbContext>();
+            services.AddScoped<AuthenticationStateProvider,
+            RevalidatingIdentityAuthenticationStateProvider
+            <AppUser>>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -50,6 +69,9 @@ namespace MyBlogServerSide
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            app.UseAuthentication();
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {

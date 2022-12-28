@@ -9,6 +9,8 @@ using Microsoft.Extensions.Hosting;
 using MyBlog.Data;
 using System.Linq;
 using MyBlog.Data.Interfaces;
+using MyBlog.Data.Models;
+using Microsoft.AspNetCore.Authentication;
 
 namespace MyBlogWebAssembly.Server
 {
@@ -26,11 +28,15 @@ namespace MyBlogWebAssembly.Server
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddDbContextFactory<MyBlogDbContext>(opt => opt.UseSqlite($"Data Source=../../MyBlog.db"));
+            services.AddDbContextFactory<MyBlogDbContext>(opt => opt.UseSqlite(Configuration.GetConnectionString("MyBlogDB")));
             services.AddScoped<IMyBlogApi, MyBlogApiServerSide>();
 
             services.AddControllersWithViews();
             services.AddRazorPages();
+            services.AddDbContext<MyBlogDbContext>(opt => opt.UseSqlite(Configuration.GetConnectionString("MyBlogDB")));
+            services.AddDefaultIdentity<AppUser>(options => options.SignIn.RequireConfirmedAccount = false).AddEntityFrameworkStores<MyBlogDbContext>();
+            services.AddIdentityServer().AddApiAuthorization<AppUser, MyBlogDbContext>();
+            services.AddAuthentication().AddIdentityServerJwt();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -53,6 +59,10 @@ namespace MyBlogWebAssembly.Server
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            app.UseIdentityServer();
+            app.UseAuthentication();
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {

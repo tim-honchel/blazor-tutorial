@@ -85,3 +85,6 @@ C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\bin\Debug\net6.0\Microsof
 C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Forms.dll
 C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\bin\Debug\net6.0\Microsoft.AspNetCore.Metadata.dll
 C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\bin\Debug\net6.0\Markdig.dll
+C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\bin\Debug\net6.0\Microsoft.AspNetCore.Components.WebAssembly.Authentication.dll
+C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\bin\Debug\net6.0\Microsoft.Extensions.Http.dll
+C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\bin\Debug\net6.0\Newtonsoft.Json.dll

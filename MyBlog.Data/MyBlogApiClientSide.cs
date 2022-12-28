@@ -32,123 +32,125 @@ namespace MyBlog.Data
             var httpclient = factory.CreateClient("Public");
             return await httpclient.GetFromJsonAsync<int>("MyBlogAPI/BlogPostCount");
         }
-    }
-    public async Task<List<BlogPost>> GetBlogPostsAsync(int numberofposts, int startindex)
-    {
-        var httpclient = factory.CreateClient("Public");
-        return await httpclient.GetFromJsonAsync<List<BlogPost>>($"MyBlogAPI/BlogPosts?numberofposts= {numberofposts}&startindex ={startindex}");
-    }
 
-    public async Task<BlogPost> SaveBlogPostAsync(BlogPost item)
-    {
-        try
+        public async Task<List<BlogPost>> GetBlogPostsAsync(int numberofposts, int startindex)
         {
-            var httpclient = factory.CreateClient("Authenticated");
-            var response = await httpclient.PutAsJsonAsync<BlogPost>("MyBlogAPI/BlogPosts", item);
-            var json = await response.Content.ReadAsStringAsync();
-            return JsonConvert.DeserializeObject<BlogPost>(json);
+            var httpclient = factory.CreateClient("Public");
+            return await httpclient.GetFromJsonAsync<List<BlogPost>>($"MyBlogAPI/BlogPosts?numberofposts= {numberofposts}&startindex ={startindex}");
         }
-        catch (AccessTokenNotAvailableException exception)
-        {
-            exception.Redirect();
-        }
-        return null;
-    }
 
-    public async Task DeleteBlogPostAsync(BlogPost item)
-    {
-        try
+        public async Task<BlogPost> SaveBlogPostAsync(BlogPost item)
         {
-            var httpclient = factory.CreateClient("Authenticated");
-            await httpclient.DeleteAsJsonAsync<BlogPost>("MyBlogAPI/BlogPosts", item);
+            try
+            {
+                var httpclient = factory.CreateClient("Authenticated");
+                var response = await httpclient.PutAsJsonAsync<BlogPost>("MyBlogAPI/BlogPosts", item);
+                var json = await response.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<BlogPost>(json);
+            }
+            catch (AccessTokenNotAvailableException exception)
+            {
+                exception.Redirect();
+            }
+            return null;
         }
-        catch (AccessTokenNotAvailableException exception)
-        {
-            exception.Redirect();
-        }
-    }
 
-    public async Task<List<Category>> GetCategoriesAsync()
-    {
-        var httpclient = factory.CreateClient("Public");
-        return await
-        httpclient.GetFromJsonAsync<List<Category>>
-        ($"MyBlogAPI/Categories");
-    }
-    public async Task<Category> GetCategoryAsync(int id)
-    {
-        var httpclient = factory.CreateClient("Public");
-        return await httpclient.GetFromJsonAsync<Category>
-        ($"MyBlogAPI/Categories/{id}");
-    }
-    public async Task DeleteCategoryAsync(Category item)
-    {
-        try
+        public async Task DeleteBlogPostAsync(BlogPost item)
         {
-            var httpclient =
-            factory.CreateClient("Authenticated");
-            await httpclient.DeleteAsJsonAsync<Category>
-            ("MyBlogAPI/Categories", item);
+            try
+            {
+                var httpclient = factory.CreateClient("Authenticated");
+                await httpclient.DeleteAsJsonAsync<BlogPost>("MyBlogAPI/BlogPosts", item);
+            }
+            catch (AccessTokenNotAvailableException exception)
+            {
+                exception.Redirect();
+            }
         }
-        catch (AccessTokenNotAvailableException exception)
-        {
-            exception.Redirect();
-        }
-    }
 
-    public async Task<Category> SaveCategoryAsync(Category
-    item)
-    {
-        try
+        public async Task<List<Category>> GetCategoriesAsync()
         {
-            var httpclient = factory.CreateClient("Authenticated");
-            var response = await httpclient.PutAsJsonAsync<Category>("MyBlogAPI/Categories", item);
-            var json = await response.Content.ReadAsStringAsync();
-            return JsonConvert.DeserializeObject<Category>(json);
+            var httpclient = factory.CreateClient("Public");
+            return await
+            httpclient.GetFromJsonAsync<List<Category>>
+            ($"MyBlogAPI/Categories");
         }
-        catch (AccessTokenNotAvailableException exception)
+        public async Task<Category> GetCategoryAsync(int id)
         {
-            exception.Redirect();
+            var httpclient = factory.CreateClient("Public");
+            return await httpclient.GetFromJsonAsync<Category>
+            ($"MyBlogAPI/Categories/{id}");
         }
-        return null;
-    }
+        public async Task DeleteCategoryAsync(Category item)
+        {
+            try
+            {
+                var httpclient =
+                factory.CreateClient("Authenticated");
+                await httpclient.DeleteAsJsonAsync<Category>
+                ("MyBlogAPI/Categories", item);
+            }
+            catch (AccessTokenNotAvailableException exception)
+            {
+                exception.Redirect();
+            }
+        }
 
-    public async Task<Tag> GetTagAsync(int id)
-    {
-        var httpclient = factory.CreateClient("Public");
-        return await httpclient.GetFromJsonAsync<Tag>($"MyBlogAPI/Tags/{id}");
-    }
-    public async Task<List<Tag>> GetTagsAsync()
-    {
-        var httpclient = factory.CreateClient("Public");
-        return await httpclient.GetFromJsonAsync<List<Tag>>($"MyBlogAPI/Tags");
-    }
-    public async Task DeleteTagAsync(Tag item)
-    {
-        try
+        public async Task<Category> SaveCategoryAsync(Category item)
         {
-            var httpclient = factory.CreateClient("Authenticated");
-            await httpclient.DeleteAsJsonAsync<Tag>("MyBlogAPI/Tags", item);
+            try
+            {
+                var httpclient = factory.CreateClient("Authenticated");
+                var response = await httpclient.PutAsJsonAsync<Category>("MyBlogAPI/Categories", item);
+                var json = await response.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<Category>(json);
+            }
+            catch (AccessTokenNotAvailableException exception)
+            {
+                exception.Redirect();
+            }
+            return null;
         }
-        catch (AccessTokenNotAvailableException exception)
-        {
-            exception.Redirect();
-        }
-    }
 
-    public async Task<Tag> SaveTagAsync(Tag item)
-    {
-        try
+        public async Task<Tag> GetTagAsync(int id)
         {
-            var httpclient = factory.CreateClient("Authenticated");
-            var response = await httpclient.PutAsJsonAsync<Tag>("MyBlogAPI/Tags", item);
-            var json = await response.Content.ReadAsStringAsync();
-            return JsonConvert.DeserializeObject<Tag>(json);
+            var httpclient = factory.CreateClient("Public");
+            return await httpclient.GetFromJsonAsync<Tag>($"MyBlogAPI/Tags/{id}");
         }
-        catch (AccessTokenNotAvailableException exception)
+
+        public async Task<List<Tag>> GetTagsAsync()
         {
-            exception.Redirect();
+            var httpclient = factory.CreateClient("Public");
+            return await httpclient.GetFromJsonAsync<List<Tag>>($"MyBlogAPI/Tags");
         }
-        return null;
+
+        public async Task DeleteTagAsync(Tag item)
+        {
+            try
+            {
+                var httpclient = factory.CreateClient("Authenticated");
+                await httpclient.DeleteAsJsonAsync<Tag>("MyBlogAPI/Tags", item);
+            }
+            catch (AccessTokenNotAvailableException exception)
+            {
+                exception.Redirect();
+            }
+        }
+
+        public async Task<Tag> SaveTagAsync(Tag item)
+        {
+            try
+            {
+                var httpclient = factory.CreateClient("Authenticated");
+                var response = await httpclient.PutAsJsonAsync<Tag>("MyBlogAPI/Tags", item);
+                var json = await response.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<Tag>(json);
+            }
+            catch (AccessTokenNotAvailableException exception)
+            {
+                exception.Redirect();
+            }
+            return null;
+        }
     }
 }

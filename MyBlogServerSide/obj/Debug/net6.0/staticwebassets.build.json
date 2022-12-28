@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QzfTjv+ZYHm88Kq6IeI6u9cU6EFiCdcSHpGy09p/IAA=",
+  "Hash": "SZPLDLyUWUVNUHUsznETBudwnANWW31b1W+6rv68KZI=",
   "Source": "MyBlogServerSide",
   "BasePath": "_content/MyBlogServerSide",
   "Mode": "Default",
@@ -17,10 +17,10 @@
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\thonchel\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\5.0.1\\staticwebassets\\AuthenticationService.js",
+      "Identity": "C:\\Users\\thonchel\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\6.0.1\\staticwebassets\\AuthenticationService.js",
       "SourceId": "Microsoft.AspNetCore.Components.WebAssembly.Authentication",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\thonchel\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\5.0.1\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\thonchel\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\6.0.1\\staticwebassets\\",
       "BasePath": "_content/Microsoft.AspNetCore.Components.WebAssembly.Authentication",
       "RelativePath": "AuthenticationService.js",
       "AssetKind": "All",
@@ -31,7 +31,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\thonchel\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\5.0.1\\staticwebassets\\AuthenticationService.js"
+      "OriginalItemSpec": "C:\\Users\\thonchel\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\6.0.1\\staticwebassets\\AuthenticationService.js"
     },
     {
       "Identity": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogServerSide\\obj\\Debug\\net6.0\\scopedcss\\bundle\\MyBlogServerSide.styles.css",

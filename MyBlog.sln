@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyBlogWebAssembly.Shared", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyBlog.Data", "MyBlog.data\MyBlog.Data.csproj", "{F69E4B94-9825-4B1D-862D-96ACC264B2E1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBlog.Data.Shared", "ByBlog.Data.Shared\MyBlog.Data.Shared.csproj", "{BABF3A98-3818-49D1-A3A2-18B53329BE3E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{F69E4B94-9825-4B1D-862D-96ACC264B2E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F69E4B94-9825-4B1D-862D-96ACC264B2E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F69E4B94-9825-4B1D-862D-96ACC264B2E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BABF3A98-3818-49D1-A3A2-18B53329BE3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BABF3A98-3818-49D1-A3A2-18B53329BE3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BABF3A98-3818-49D1-A3A2-18B53329BE3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BABF3A98-3818-49D1-A3A2-18B53329BE3E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

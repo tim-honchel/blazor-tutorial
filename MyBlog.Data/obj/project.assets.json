@@ -1507,6 +1507,21 @@
         "build": {
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
+      },
+      "MyBlog.Data.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.WebAssembly.Authentication": "5.0.17",
+          "Microsoft.Extensions.Http": "5.0.0",
+          "Newtonsoft.Json": "13.0.2"
+        },
+        "compile": {
+          "bin/placeholder/MyBlog.Data.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyBlog.Data.Shared.dll": {}
+        }
       }
     }
   },
@@ -3467,6 +3482,11 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "MyBlog.Data.Shared/1.0.0": {
+      "type": "project",
+      "path": "../ByBlog.Data.Shared/MyBlog.Data.Shared.csproj",
+      "msbuildProject": "../ByBlog.Data.Shared/MyBlog.Data.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3478,6 +3498,7 @@
       "Microsoft.EntityFrameworkCore.Sqlite >= 7.0.1",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.1",
       "Microsoft.Extensions.Http >= 7.0.0",
+      "MyBlog.Data.Shared >= 1.0.0",
       "Newtonsoft.Json >= 13.0.2"
     ]
   },
@@ -3507,7 +3528,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\thonchel\\source\\repos\\MyBlog\\ByBlog.Data.Shared\\MyBlog.Data.Shared.csproj": {
+              "projectPath": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\ByBlog.Data.Shared\\MyBlog.Data.Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

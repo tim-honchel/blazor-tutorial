@@ -1531,6 +1531,7 @@
           "Microsoft.AspNetCore.Diagnostics": "2.2.0",
           "Microsoft.EntityFrameworkCore.Sqlite": "7.0.1",
           "Microsoft.Extensions.Http": "7.0.0",
+          "MyBlog.Data.Shared": "1.0.0",
           "Newtonsoft.Json": "13.0.2"
         },
         "compile": {
@@ -1538,6 +1539,21 @@
         },
         "runtime": {
           "bin/placeholder/MyBlog.Data.dll": {}
+        }
+      },
+      "MyBlog.Data.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.WebAssembly.Authentication": "5.0.17",
+          "Microsoft.Extensions.Http": "5.0.0",
+          "Newtonsoft.Json": "13.0.2"
+        },
+        "compile": {
+          "bin/placeholder/MyBlog.Data.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyBlog.Data.Shared.dll": {}
         }
       }
     }
@@ -3527,6 +3543,11 @@
       "type": "project",
       "path": "../MyBlog.data/MyBlog.Data.csproj",
       "msbuildProject": "../MyBlog.data/MyBlog.Data.csproj"
+    },
+    "MyBlog.Data.Shared/1.0.0": {
+      "type": "project",
+      "path": "../ByBlog.Data.Shared/MyBlog.Data.Shared.csproj",
+      "msbuildProject": "../ByBlog.Data.Shared/MyBlog.Data.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {

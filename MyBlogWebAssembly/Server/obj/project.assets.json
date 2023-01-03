@@ -1624,6 +1624,20 @@
           "bin/placeholder/MyBlog.Data.Shared.dll": {}
         }
       },
+      "MyBlog.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "5.0.17",
+          "MyBlog.Data.Shared": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MyBlog.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyBlog.Shared.dll": {}
+        }
+      },
       "MyBlogWebAssembly.Client/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -1632,6 +1646,7 @@
           "Microsoft.AspNetCore.Components.WebAssembly.Authentication": "6.0.12",
           "Microsoft.Extensions.Http": "7.0.0",
           "MyBlog.Data.Shared": "1.0.0",
+          "MyBlog.Shared": "1.0.0",
           "MyBlogWebAssembly.Shared": "1.0.0"
         },
         "compile": {
@@ -3704,6 +3719,11 @@
       "type": "project",
       "path": "../../MyBlog.Data.Shared/MyBlog.Data.Shared.csproj",
       "msbuildProject": "../../MyBlog.Data.Shared/MyBlog.Data.Shared.csproj"
+    },
+    "MyBlog.Shared/1.0.0": {
+      "type": "project",
+      "path": "../../MyBlog.Shared/MyBlog.Shared.csproj",
+      "msbuildProject": "../../MyBlog.Shared/MyBlog.Shared.csproj"
     },
     "MyBlogWebAssembly.Client/1.0.0": {
       "type": "project",

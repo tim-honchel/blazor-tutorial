@@ -1,11 +1,22 @@
 {
   "Version": 1,
-  "Hash": "Bx44RpeUU0FTp/RR6lj+PQCwK3R0Hb6WgaqG9X47Kq4=",
+  "Hash": "YxyMwEc/A7bDZObgD1K8Gd4W2+o6rB8ULA2QV28ZNvY=",
   "Source": "MyBlogWebAssembly.Server",
   "BasePath": "_content/MyBlogWebAssembly.Server",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Shared\\MyBlog.Shared.csproj",
+      "Version": 1,
+      "Source": "MyBlog.Shared",
+      "GetPublishAssetsTargets": "",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
+      "GetBuildAssetsTargets": "GetCurrentProjectStaticWebAssetsV2",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
+    },
     {
       "Identity": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\MyBlogWebAssembly.Client.csproj",
       "Version": 2,
@@ -19,6 +30,13 @@
     }
   ],
   "DiscoveryPatterns": [
+    {
+      "Name": "MyBlog.Shared\\wwwroot",
+      "Source": "MyBlog.Shared",
+      "ContentRoot": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Shared\\wwwroot\\",
+      "BasePath": "_content/MyBlog.Shared",
+      "Pattern": "**"
+    },
     {
       "Name": "MyBlogWebAssembly.Client\\wwwroot",
       "Source": "MyBlogWebAssembly.Client",
@@ -44,6 +62,57 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\thonchel\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\6.0.12\\staticwebassets\\AuthenticationService.js"
+    },
+    {
+      "Identity": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Shared\\obj\\Debug\\net5.0\\scopedcss\\projectbundle\\MyBlog.Shared.bundle.scp.css",
+      "SourceId": "MyBlog.Shared",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Shared\\obj\\Debug\\net5.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/MyBlog.Shared",
+      "RelativePath": "MyBlog.Shared.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Shared\\obj\\Debug\\net5.0\\scopedcss\\projectbundle\\MyBlog.Shared.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Shared\\wwwroot\\background.png",
+      "SourceId": "MyBlog.Shared",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Shared\\wwwroot\\",
+      "BasePath": "_content/MyBlog.Shared",
+      "RelativePath": "background.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Shared\\wwwroot\\background.png"
+    },
+    {
+      "Identity": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Shared\\wwwroot\\exampleJsInterop.js",
+      "SourceId": "MyBlog.Shared",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Shared\\wwwroot\\",
+      "BasePath": "_content/MyBlog.Shared",
+      "RelativePath": "exampleJsInterop.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Shared\\wwwroot\\exampleJsInterop.js"
     },
     {
       "Identity": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\blazor.boot.json",
@@ -197,6 +266,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\thonchel\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.11\\runtimes\\browser-wasm\\native\\icudt_no_CJK.dat"
+    },
+    {
+      "Identity": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Markdig.dll",
+      "SourceId": "MyBlogWebAssembly.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Markdig.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\thonchel\\.nuget\\packages\\markdig\\0.30.4\\lib\\net6.0\\Markdig.dll"
     },
     {
       "Identity": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Authorization.dll",
@@ -726,6 +812,74 @@
       "OriginalItemSpec": "C:\\Users\\thonchel\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.11\\runtimes\\browser-wasm\\lib\\net6.0\\mscorlib.dll"
     },
     {
+      "Identity": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\MyBlog.Data.Shared.dll",
+      "SourceId": "MyBlogWebAssembly.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/MyBlog.Data.Shared.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Data.Shared\\bin\\Debug\\net5.0\\MyBlog.Data.Shared.dll"
+    },
+    {
+      "Identity": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\MyBlog.Data.Shared.pdb",
+      "SourceId": "MyBlogWebAssembly.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/MyBlog.Data.Shared.pdb",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "symbol",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Data.Shared\\bin\\Debug\\net5.0\\MyBlog.Data.Shared.pdb"
+    },
+    {
+      "Identity": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\MyBlog.Shared.dll",
+      "SourceId": "MyBlogWebAssembly.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/MyBlog.Shared.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Shared\\bin\\Debug\\net5.0\\MyBlog.Shared.dll"
+    },
+    {
+      "Identity": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\MyBlog.Shared.pdb",
+      "SourceId": "MyBlogWebAssembly.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/MyBlog.Shared.pdb",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "symbol",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Shared\\bin\\Debug\\net5.0\\MyBlog.Shared.pdb"
+    },
+    {
       "Identity": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\MyBlogWebAssembly.Client.dll",
       "SourceId": "MyBlogWebAssembly.Client",
       "SourceType": "Project",
@@ -809,6 +963,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\thonchel\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.11\\runtimes\\browser-wasm\\lib\\net6.0\\netstandard.dll"
+    },
+    {
+      "Identity": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Newtonsoft.Json.dll",
+      "SourceId": "MyBlogWebAssembly.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Newtonsoft.Json.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\thonchel\\.nuget\\packages\\newtonsoft.json\\13.0.2\\lib\\net6.0\\Newtonsoft.Json.dll"
     },
     {
       "Identity": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.AppContext.dll",
@@ -3820,6 +3991,23 @@
       "OriginalItemSpec": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Reflection.Emit.ILGeneration.dll"
     },
     {
+      "Identity": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\obj\\Debug\\net6.0\\build-gz\\2G5dWYTM.gz",
+      "SourceId": "MyBlogWebAssembly.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Markdig.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Markdig.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Markdig.dll"
+    },
+    {
       "Identity": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\obj\\Debug\\net6.0\\build-gz\\2hKfqZNN.gz",
       "SourceId": "MyBlogWebAssembly.Client",
       "SourceType": "Project",
@@ -4466,6 +4654,23 @@
       "OriginalItemSpec": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Xml.XPath.XDocument.dll"
     },
     {
+      "Identity": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\obj\\Debug\\net6.0\\build-gz\\Cs8LqDlJ.gz",
+      "SourceId": "MyBlogWebAssembly.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Newtonsoft.Json.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Newtonsoft.Json.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Newtonsoft.Json.dll"
+    },
+    {
       "Identity": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\obj\\Debug\\net6.0\\build-gz\\ctHuGzDr.gz",
       "SourceId": "MyBlogWebAssembly.Client",
       "SourceType": "Project",
@@ -4719,6 +4924,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Win32.Registry.dll"
+    },
+    {
+      "Identity": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\obj\\Debug\\net6.0\\build-gz\\EUTdmBOR.gz",
+      "SourceId": "MyBlogWebAssembly.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/MyBlog.Data.Shared.pdb.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\MyBlog.Data.Shared.pdb",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\MyBlog.Data.Shared.pdb"
     },
     {
       "Identity": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\obj\\Debug\\net6.0\\build-gz\\f4XChnYW.gz",
@@ -5860,6 +6082,23 @@
       "OriginalItemSpec": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Collections.NonGeneric.dll"
     },
     {
+      "Identity": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\obj\\Debug\\net6.0\\build-gz\\pnwQkvwi.gz",
+      "SourceId": "MyBlogWebAssembly.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/MyBlog.Shared.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\MyBlog.Shared.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\MyBlog.Shared.dll"
+    },
+    {
       "Identity": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\obj\\Debug\\net6.0\\build-gz\\PTPO4nFZ.gz",
       "SourceId": "MyBlogWebAssembly.Client",
       "SourceType": "Project",
@@ -6149,6 +6388,23 @@
       "OriginalItemSpec": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Private.CoreLib.dll"
     },
     {
+      "Identity": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\obj\\Debug\\net6.0\\build-gz\\Rjyd5Hiq.gz",
+      "SourceId": "MyBlogWebAssembly.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/MyBlog.Data.Shared.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\MyBlog.Data.Shared.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\MyBlog.Data.Shared.dll"
+    },
+    {
       "Identity": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\obj\\Debug\\net6.0\\build-gz\\RnrDBWta.gz",
       "SourceId": "MyBlogWebAssembly.Client",
       "SourceType": "Project",
@@ -6419,6 +6675,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.Ping.dll"
+    },
+    {
+      "Identity": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\obj\\Debug\\net6.0\\build-gz\\uYBNB+V8.gz",
+      "SourceId": "MyBlogWebAssembly.Client",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/MyBlog.Shared.pdb.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\MyBlog.Shared.pdb",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\MyBlog.Shared.pdb"
     },
     {
       "Identity": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\obj\\Debug\\net6.0\\build-gz\\v+iBgvgM.gz",
@@ -7269,6 +7542,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Server\\obj\\Debug\\net6.0\\scopedcss\\bundle\\MyBlogWebAssembly.Server.styles.css",
+      "SourceId": "MyBlogWebAssembly.Server",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Server\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "BasePath": "_content/MyBlogWebAssembly.Server",
+      "RelativePath": "MyBlogWebAssembly.Server.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Server\\obj\\Debug\\net6.0\\scopedcss\\bundle\\MyBlogWebAssembly.Server.styles.css"
     }
   ]
 }

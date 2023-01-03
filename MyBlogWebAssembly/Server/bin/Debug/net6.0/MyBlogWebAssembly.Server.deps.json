@@ -105,6 +105,14 @@
           }
         }
       },
+      "Markdig/0.30.4": {
+        "runtime": {
+          "lib/net6.0/Markdig.dll": {
+            "assemblyVersion": "0.30.0.0",
+            "fileVersion": "0.30.4.0"
+          }
+        }
+      },
       "Microsoft.AspNetCore.ApiAuthorization.IdentityServer/6.0.12": {
         "dependencies": {
           "Duende.IdentityServer": "5.2.0",
@@ -933,10 +941,31 @@
           "Microsoft.AspNetCore.Diagnostics": "2.2.0",
           "Microsoft.EntityFrameworkCore.Sqlite": "7.0.1",
           "Microsoft.Extensions.Http": "7.0.0",
+          "MyBlog.Data.Shared": "1.0.0",
           "Newtonsoft.Json": "13.0.2"
         },
         "runtime": {
           "MyBlog.Data.dll": {}
+        }
+      },
+      "MyBlog.Data.Shared/1.0.0": {
+        "dependencies": {
+          "Markdig": "0.30.4",
+          "Microsoft.AspNetCore.Components.WebAssembly.Authentication": "6.0.12",
+          "Microsoft.Extensions.Http": "7.0.0",
+          "Newtonsoft.Json": "13.0.2"
+        },
+        "runtime": {
+          "MyBlog.Data.Shared.dll": {}
+        }
+      },
+      "MyBlog.Shared/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "6.0.12",
+          "MyBlog.Data.Shared": "1.0.0"
+        },
+        "runtime": {
+          "MyBlog.Shared.dll": {}
         }
       },
       "MyBlogWebAssembly.Client/1.0.0": {
@@ -944,6 +973,8 @@
           "Microsoft.AspNetCore.Components.WebAssembly": "6.0.10",
           "Microsoft.AspNetCore.Components.WebAssembly.Authentication": "6.0.12",
           "Microsoft.Extensions.Http": "7.0.0",
+          "MyBlog.Data.Shared": "1.0.0",
+          "MyBlog.Shared": "1.0.0",
           "MyBlogWebAssembly.Shared": "1.0.0"
         },
         "runtime": {
@@ -1011,6 +1042,13 @@
       "sha512": "sha512-Gcv4YYXncvUvTNLF8lDJyItZzaEDFcEi3geMDtylGcl/Rx90vcV7Kv3yAofktJBW7GvmIjQgC8LtUq0s9XQT2w==",
       "path": "identitymodel/5.1.0",
       "hashPath": "identitymodel.5.1.0.nupkg.sha512"
+    },
+    "Markdig/0.30.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9LL7Mzubwf6QmOTZIqf+vERiinqPA1H+irBA38POhr93W/it00AvFWaCtF80+8VJTooFmcAJyZT2f60t1f88eQ==",
+      "path": "markdig/0.30.4",
+      "hashPath": "markdig.0.30.4.nupkg.sha512"
     },
     "Microsoft.AspNetCore.ApiAuthorization.IdentityServer/6.0.12": {
       "type": "package",
@@ -1573,6 +1611,16 @@
       "hashPath": "system.text.json.7.0.0.nupkg.sha512"
     },
     "MyBlog.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MyBlog.Data.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MyBlog.Shared/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

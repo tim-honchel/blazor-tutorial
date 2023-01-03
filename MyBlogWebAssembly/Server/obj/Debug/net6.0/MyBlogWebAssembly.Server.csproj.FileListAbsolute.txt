@@ -122,3 +122,9 @@ C:\Users\thonchel\source\repos\MyBlog\MyBlogWebAssembly\Server\bin\Debug\net6.0\
 C:\Users\thonchel\source\repos\MyBlog\MyBlogWebAssembly\Server\bin\Debug\net6.0\MyBlog.Data.dll
 C:\Users\thonchel\source\repos\MyBlog\MyBlogWebAssembly\Server\bin\Debug\net6.0\MyBlog.Data.pdb
 C:\Users\thonchel\source\repos\MyBlog\MyBlogWebAssembly\Server\obj\Debug\net6.0\MyBlogWebAssembly.Server.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\thonchel\source\repos\MyBlog\MyBlogWebAssembly\Server\bin\Debug\net6.0\MyBlog.Shared.StaticWebAssets.xml
+C:\Users\thonchel\source\repos\MyBlog\MyBlogWebAssembly\Server\bin\Debug\net6.0\Markdig.dll
+C:\Users\thonchel\source\repos\MyBlog\MyBlogWebAssembly\Server\bin\Debug\net6.0\MyBlog.Data.Shared.dll
+C:\Users\thonchel\source\repos\MyBlog\MyBlogWebAssembly\Server\bin\Debug\net6.0\MyBlog.Shared.dll
+C:\Users\thonchel\source\repos\MyBlog\MyBlogWebAssembly\Server\bin\Debug\net6.0\MyBlog.Data.Shared.pdb
+C:\Users\thonchel\source\repos\MyBlog\MyBlogWebAssembly\Server\bin\Debug\net6.0\MyBlog.Shared.pdb

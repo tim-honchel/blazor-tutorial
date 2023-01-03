@@ -33,7 +33,11 @@ namespace MyBlogWebAssembly.Server
             services.AddDbContextFactory<MyBlogDbContext>(opt => opt.UseSqlite(Configuration.GetConnectionString("MyBlogDB")));
             services.AddScoped<IMyBlogApi, MyBlogApiServerSide>();
 
-            services.AddControllersWithViews();
+            services.AddControllersWithViews().AddJsonOptions(options => 
+            {
+                options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve;
+                options.JsonSerializerOptions.PropertyNamingPolicy = null; 
+            });
             services.AddRazorPages();
             services.AddDbContext<MyBlogDbContext>(opt => opt.UseSqlite(Configuration.GetConnectionString("MyBlogDB")));
             services.AddDefaultIdentity<AppUser>(options => options.SignIn.RequireConfirmedAccount = false).AddRoles<IdentityRole>().AddEntityFrameworkStores<MyBlogDbContext>();

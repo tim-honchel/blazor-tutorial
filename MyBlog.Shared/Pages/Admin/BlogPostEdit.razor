@@ -14,26 +14,34 @@
     <InputDate @bind-Value="Post.PublishDate"></InputDate>
     <InputSelect @bind-Value="selectedCategory">
         <option value="0" disabled>None selected</option>
-        @foreach (var category in Categories)
+        @if (Categories != null)
         {
-            <option value="@category.Id">@category.Name </option>
+            @foreach (var category in Categories)
+            {
+                <option value="@category.Id">@category.Name </option>
+            }
         }
+
     </InputSelect>
     <ul>
-        @foreach (var tag in Tags)
+        @if (Tags != null)
         {
-            <li>
-                @tag.Name
-                @if (Post.Tags.Any(t => t.Id == tag.Id))
-                {
-                    <button type="button" @onclick="@(() => {Post.Tags.Remove(Post.Tags.Single(t=>t.Id==tag.Id)); })">Remove</button>
-                }
-                else
-                {
-                    <button type="button" @onclick="@(()=> { Post.Tags.Add(tag); })">Add</button>
-                }
-            </li>
+            @foreach (var tag in Tags)
+            {
+                <li>
+                    @tag.Name
+                    @if (Post.Tags.Any(t => t.Id == tag.Id))
+                    {
+                        <button type="button" @onclick="@(() => {Post.Tags.Remove(Post.Tags.Single(t=>t.Id==tag.Id)); })">Remove</button>
+                    }
+                    else
+                    {
+                        <button type="button" @onclick="@(()=> { Post.Tags.Add(tag); })">Add</button>
+                    }
+                </li>
+            }
         }
+        
     </ul>
     <InputTextArea @bind-Value="Post.Text"@onkeyup="UpdateHTML"></InputTextArea>
     <button type="submit" class="btn btn-success">Save</button>

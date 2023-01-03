@@ -1,44 +1,24 @@
 ﻿@page "/"
 @using MyBlog.Data.Interfaces
 @using MyBlog.Data.Models
+@using Markdig
 @inject IMyBlogApi api
 
-<button @onclick="AddSomePosts">Add some fake posts</button>
-<br />
-<br />
-<ul>
-    <Virtualize ItemsProvider="LoadPosts" Context="p">
-        <li><a href="/Post/@p.Id">@p.Title</a></li>
-    </Virtualize>
-</ul>
+
+<Virtualize @ref="virtualize" ItemsProvider="LoadPosts" Context="p">
+    <article>
+        <br />
+        <h2>@p.Title</h2>
+        @((MarkupString)GetFirstParagraph(Markdig.Markdown.ToHtml(p.Text, pipeline)))
+        <a href="/Post/@p.Id">Read more</a>
+        <br />
+    </article>
+</Virtualize>
+
 
 @code
 {
-    protected async Task AddSomePosts()
-    {
-
-        var category = new Category() { Name = "New Category" };
-        try
-        {
-            category = await api.SaveCategoryAsync(category); // TODO: causes runtime error
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine(e);
-        }
-
-        for (int i = 0; i < 10; i++)
-        {
-            var post = new BlogPost() 
-                {
-                    PublishDate = DateTime.Now,
-                    Title = $"Blog post {i}",
-                    Text = "Text",
-                    Category = category
-                };
-            await api.SaveBlogPostAsync(post); // TODO: causes runtime error
-        }
-    }
+    private Virtualize<BlogPost> virtualize { get; set; }
     public int totalBlogPosts { get; set; }
     private async ValueTask<ItemsProviderResult<BlogPost>>LoadPosts(ItemsProviderRequest request)
     {
@@ -51,6 +31,25 @@
         return new ItemsProviderResult<BlogPost>(blogPosts, totalBlogPosts);
     }
 
+    public string GetFirstParagraph(string html)
+    {
+        var m = System.Text.RegularExpressions.
+        Regex.Matches(html, @"<p>(.*?)</p>", System.Text.RegularExpressions.RegexOptions.Singleline);
+        if (m.Count > 0)
+        {
+            return m[0].Groups[1].Value;
+        }
+        else
+        {
+            return "";
+        }
+    }
+    MarkdownPipeline pipeline;
+    protected override Task OnInitializedAsync()
+    {
+        pipeline = new MarkdownPipelineBuilder().UseEmojiAndSmiley().Build();
+        return base.OnInitializedAsync();
+    }
 
 }
 

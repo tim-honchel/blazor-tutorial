@@ -83,7 +83,7 @@ using MyBlog.Shared.Components;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 30 "C:\Users\thonchel\source\repos\MyBlog\MyBlog.Shared\Shared\NavMenu.razor"
+#line 32 "C:\Users\thonchel\source\repos\MyBlog\MyBlog.Shared\Shared\NavMenu.razor"
        
     private bool collapseNavMenu = true;
 

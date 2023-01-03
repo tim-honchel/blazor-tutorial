@@ -89,7 +89,7 @@ using System.Collections.Generic;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 26 "C:\Users\thonchel\source\repos\MyBlog\MyBlog.Shared\Components\ItemList.razor"
+#line 25 "C:\Users\thonchel\source\repos\MyBlog\MyBlog.Shared\Components\ItemList.razor"
        
     [Parameter]
     public List<ItemType> Items { get; set; } = new List<ItemType>();

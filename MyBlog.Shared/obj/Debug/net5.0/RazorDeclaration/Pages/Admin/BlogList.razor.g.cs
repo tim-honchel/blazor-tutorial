@@ -105,7 +105,7 @@ using MyBlog.Data.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 14 "C:\Users\thonchel\source\repos\MyBlog\MyBlog.Shared\Pages\Admin\BlogList.razor"
+#line 15 "C:\Users\thonchel\source\repos\MyBlog\MyBlog.Shared\Pages\Admin\BlogList.razor"
        
     public int TotalBlogPosts { get; set; }
     private async ValueTask<ItemsProviderResult<BlogPost>>

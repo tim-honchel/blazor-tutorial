@@ -89,6 +89,13 @@ using MyBlog.Data.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "C:\Users\thonchel\source\repos\MyBlog\MyBlog.Shared\Pages\Index.razor"
+using Markdig;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Components.RouteAttribute("/")]
     public partial class Index : global::Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -98,33 +105,9 @@ using MyBlog.Data.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 16 "C:\Users\thonchel\source\repos\MyBlog\MyBlog.Shared\Pages\Index.razor"
+#line 20 "C:\Users\thonchel\source\repos\MyBlog\MyBlog.Shared\Pages\Index.razor"
  
-    protected async Task AddSomePosts()
-    {
-
-        var category = new Category() { Name = "New Category" };
-        try
-        {
-            category = await api.SaveCategoryAsync(category); // TODO: causes runtime error
-        }
-        catch (Exception e)
-        {
-            Console.WriteLine(e);
-        }
-
-        for (int i = 0; i < 10; i++)
-        {
-            var post = new BlogPost() 
-                {
-                    PublishDate = DateTime.Now,
-                    Title = $"Blog post {i}",
-                    Text = "Text",
-                    Category = category
-                };
-            await api.SaveBlogPostAsync(post); // TODO: causes runtime error
-        }
-    }
+    private Virtualize<BlogPost> virtualize { get; set; }
     public int totalBlogPosts { get; set; }
     private async ValueTask<ItemsProviderResult<BlogPost>>LoadPosts(ItemsProviderRequest request)
     {
@@ -137,6 +120,25 @@ using MyBlog.Data.Models;
         return new ItemsProviderResult<BlogPost>(blogPosts, totalBlogPosts);
     }
 
+    public string GetFirstParagraph(string html)
+    {
+        var m = System.Text.RegularExpressions.
+        Regex.Matches(html, @"<p>(.*?)</p>", System.Text.RegularExpressions.RegexOptions.Singleline);
+        if (m.Count > 0)
+        {
+            return m[0].Groups[1].Value;
+        }
+        else
+        {
+            return "";
+        }
+    }
+    MarkdownPipeline pipeline;
+    protected override Task OnInitializedAsync()
+    {
+        pipeline = new MarkdownPipelineBuilder().UseEmojiAndSmiley().Build();
+        return base.OnInitializedAsync();
+    }
 
 
 #line default

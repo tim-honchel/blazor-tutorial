@@ -2,7 +2,6 @@
 @using System.Collections.Generic
 
 <h3>List</h3>
-
 <table>
     <Virtualize Items="@Items" Context="item">
         <tr>
@@ -12,7 +11,7 @@
                     Select
                 </button>
             </td>
-            <td>@ItemTemplate(item)</td>
+            <td> @ItemTemplate(item) </td>
             <td>
                 <button class="btn btn-danger"
                     @onclick="@( () => {DeleteEvent.InvokeAsync(item); })">

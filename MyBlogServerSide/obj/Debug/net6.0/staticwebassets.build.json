@@ -1,12 +1,31 @@
 {
   "Version": 1,
-  "Hash": "zB1VeQ1AfhwDDoj7GmmAkEEahLr8JLoOsm7a88kyqXA=",
+  "Hash": "uCu7fwK7fjyQV2UHlPB4FB/on1iBSqnJI2Igpo9ulRg=",
   "Source": "MyBlogServerSide",
   "BasePath": "_content/MyBlogServerSide",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Shared\\MyBlog.Shared.csproj",
+      "Version": 1,
+      "Source": "MyBlog.Shared",
+      "GetPublishAssetsTargets": "",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
+      "GetBuildAssetsTargets": "GetCurrentProjectStaticWebAssetsV2",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
+    }
+  ],
   "DiscoveryPatterns": [
+    {
+      "Name": "MyBlog.Shared\\wwwroot",
+      "Source": "MyBlog.Shared",
+      "ContentRoot": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Shared\\wwwroot\\",
+      "BasePath": "_content/MyBlog.Shared",
+      "Pattern": "**"
+    },
     {
       "Name": "MyBlogServerSide\\wwwroot",
       "Source": "MyBlogServerSide",
@@ -1052,6 +1071,57 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\thonchel\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.12\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Shared\\obj\\Debug\\net5.0\\scopedcss\\projectbundle\\MyBlog.Shared.bundle.scp.css",
+      "SourceId": "MyBlog.Shared",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Shared\\obj\\Debug\\net5.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/MyBlog.Shared",
+      "RelativePath": "MyBlog.Shared.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Shared\\obj\\Debug\\net5.0\\scopedcss\\projectbundle\\MyBlog.Shared.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Shared\\wwwroot\\background.png",
+      "SourceId": "MyBlog.Shared",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Shared\\wwwroot\\",
+      "BasePath": "_content/MyBlog.Shared",
+      "RelativePath": "background.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Shared\\wwwroot\\background.png"
+    },
+    {
+      "Identity": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Shared\\wwwroot\\exampleJsInterop.js",
+      "SourceId": "MyBlog.Shared",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Shared\\wwwroot\\",
+      "BasePath": "_content/MyBlog.Shared",
+      "RelativePath": "exampleJsInterop.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Shared\\wwwroot\\exampleJsInterop.js"
     },
     {
       "Identity": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogServerSide\\obj\\Debug\\net6.0\\scopedcss\\bundle\\MyBlogServerSide.styles.css",

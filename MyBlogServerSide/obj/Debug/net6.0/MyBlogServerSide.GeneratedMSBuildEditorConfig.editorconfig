@@ -20,32 +20,8 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/thonchel/source/repos/MyBlog/MyBlogServerSide/Components/Alert.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBbGVydC5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/thonchel/source/repos/MyBlog/MyBlogServerSide/Components/ItemList.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xJdGVtTGlzdC5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/thonchel/source/repos/MyBlog/MyBlogServerSide/Components/LoginDisplay.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMb2dpbkRpc3BsYXkucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/thonchel/source/repos/MyBlog/MyBlogServerSide/Pages/Admin/BlogList.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQmxvZ0xpc3QucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/thonchel/source/repos/MyBlog/MyBlogServerSide/Pages/Admin/BlogPostEdit.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQmxvZ1Bvc3RFZGl0LnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/thonchel/source/repos/MyBlog/MyBlogServerSide/Pages/Admin/CategoryList.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ2F0ZWdvcnlMaXN0LnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/thonchel/source/repos/MyBlog/MyBlogServerSide/Pages/Admin/TagList.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cVGFnTGlzdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/thonchel/source/repos/MyBlog/MyBlogServerSide/Pages/AlertTest.razor]
@@ -68,16 +44,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/thonchel/source/repos/MyBlog/MyBlogServerSide/Pages/Index.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/thonchel/source/repos/MyBlog/MyBlogServerSide/Pages/ParentCounter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFyZW50Q291bnRlci5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/thonchel/source/repos/MyBlog/MyBlogServerSide/Pages/Post.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9zdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/thonchel/source/repos/MyBlog/MyBlogServerSide/Pages/SetFocus.razor]
@@ -95,10 +63,6 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Users/thonchel/source/repos/MyBlog/MyBlogServerSide/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-ps0g0axlp5
-
-[C:/Users/thonchel/source/repos/MyBlog/MyBlogServerSide/Shared/NavMenu.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-yvz4vq5s2m
 
 [C:/Users/thonchel/source/repos/MyBlog/MyBlogServerSide/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s

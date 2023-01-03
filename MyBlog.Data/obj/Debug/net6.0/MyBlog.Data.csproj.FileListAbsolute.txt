@@ -12,3 +12,6 @@ C:\Users\thonchel\source\repos\MyBlog\MyBlog.data\obj\Debug\net6.0\refint\MyBlog
 C:\Users\thonchel\source\repos\MyBlog\MyBlog.data\obj\Debug\net6.0\MyBlog.Data.pdb
 C:\Users\thonchel\source\repos\MyBlog\MyBlog.data\obj\Debug\net6.0\MyBlog.Data.genruntimeconfig.cache
 C:\Users\thonchel\source\repos\MyBlog\MyBlog.data\obj\Debug\net6.0\ref\MyBlog.Data.dll
+C:\Users\thonchel\source\repos\MyBlog\MyBlog.data\bin\Debug\net6.0\MyBlog.Data.Shared.dll
+C:\Users\thonchel\source\repos\MyBlog\MyBlog.data\bin\Debug\net6.0\MyBlog.Data.Shared.pdb
+C:\Users\thonchel\source\repos\MyBlog\MyBlog.data\obj\Debug\net6.0\MyBlog.Data.csproj.CopyComplete

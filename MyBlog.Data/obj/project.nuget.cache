@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "p/USxyMhgU4iH2IIYL9LJlgLbWZ9kEtH3XoevKUn0ARJE/cI7YXwtAz1sT+lURr4HaSmLzP9YZxJRgjSLI0cLg==",
+  "dgSpecHash": "ZW8ofK/qGDfF+oPKj2LDFzGfNLoMAbIxUS/seDIQnr6V6I3reNALMZ/hL/s70UWojZBG4HfRANHFRpYkr5R7oA==",
   "success": true,
   "projectFilePath": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.data\\MyBlog.Data.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,7 @@
     "C:\\Users\\thonchel\\.nuget\\packages\\duende.identityserver.storage\\5.2.0\\duende.identityserver.storage.5.2.0.nupkg.sha512",
     "C:\\Users\\thonchel\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\thonchel\\.nuget\\packages\\identitymodel\\5.1.0\\identitymodel.5.1.0.nupkg.sha512",
+    "C:\\Users\\thonchel\\.nuget\\packages\\markdig\\0.30.4\\markdig.0.30.4.nupkg.sha512",
     "C:\\Users\\thonchel\\.nuget\\packages\\microsoft.aspnetcore.apiauthorization.identityserver\\6.0.12\\microsoft.aspnetcore.apiauthorization.identityserver.6.0.12.nupkg.sha512",
     "C:\\Users\\thonchel\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.12\\microsoft.aspnetcore.authentication.jwtbearer.6.0.12.nupkg.sha512",
     "C:\\Users\\thonchel\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\5.0.0\\microsoft.aspnetcore.authentication.openidconnect.5.0.0.nupkg.sha512",

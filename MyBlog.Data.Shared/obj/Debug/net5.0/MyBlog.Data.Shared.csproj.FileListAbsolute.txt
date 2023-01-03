@@ -1,0 +1,17 @@
+C:\Users\thonchel\source\repos\MyBlog\ByBlog.Data.Shared\obj\Debug\net5.0\MyBlog.Data.Shared.csproj.AssemblyReference.cache
+C:\Users\thonchel\source\repos\MyBlog\ByBlog.Data.Shared\obj\Debug\net5.0\MyBlog.Data.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thonchel\source\repos\MyBlog\ByBlog.Data.Shared\obj\Debug\net5.0\MyBlog.Data.Shared.AssemblyInfoInputs.cache
+C:\Users\thonchel\source\repos\MyBlog\ByBlog.Data.Shared\obj\Debug\net5.0\MyBlog.Data.Shared.AssemblyInfo.cs
+C:\Users\thonchel\source\repos\MyBlog\ByBlog.Data.Shared\obj\Debug\net5.0\MyBlog.Data.Shared.csproj.CoreCompileInputs.cache
+C:\Users\thonchel\source\repos\MyBlog\MyBlog.Data.Shared\obj\Debug\net5.0\MyBlog.Data.Shared.csproj.AssemblyReference.cache
+C:\Users\thonchel\source\repos\MyBlog\MyBlog.Data.Shared\obj\Debug\net5.0\MyBlog.Data.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thonchel\source\repos\MyBlog\MyBlog.Data.Shared\obj\Debug\net5.0\MyBlog.Data.Shared.AssemblyInfoInputs.cache
+C:\Users\thonchel\source\repos\MyBlog\MyBlog.Data.Shared\obj\Debug\net5.0\MyBlog.Data.Shared.AssemblyInfo.cs
+C:\Users\thonchel\source\repos\MyBlog\MyBlog.Data.Shared\obj\Debug\net5.0\MyBlog.Data.Shared.csproj.CoreCompileInputs.cache
+C:\Users\thonchel\source\repos\MyBlog\MyBlog.Data.Shared\bin\Debug\net5.0\MyBlog.Data.Shared.deps.json
+C:\Users\thonchel\source\repos\MyBlog\MyBlog.Data.Shared\bin\Debug\net5.0\MyBlog.Data.Shared.dll
+C:\Users\thonchel\source\repos\MyBlog\MyBlog.Data.Shared\bin\Debug\net5.0\MyBlog.Data.Shared.pdb
+C:\Users\thonchel\source\repos\MyBlog\MyBlog.Data.Shared\obj\Debug\net5.0\MyBlog.Data.Shared.dll
+C:\Users\thonchel\source\repos\MyBlog\MyBlog.Data.Shared\obj\Debug\net5.0\refint\MyBlog.Data.Shared.dll
+C:\Users\thonchel\source\repos\MyBlog\MyBlog.Data.Shared\obj\Debug\net5.0\MyBlog.Data.Shared.pdb
+C:\Users\thonchel\source\repos\MyBlog\MyBlog.Data.Shared\obj\Debug\net5.0\ref\MyBlog.Data.Shared.dll

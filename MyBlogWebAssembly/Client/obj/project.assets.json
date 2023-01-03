@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "Markdig/0.30.4": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Markdig.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Markdig.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/6.0.12": {
         "type": "package",
         "dependencies": {
@@ -563,6 +576,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "Markdig": "0.30.4",
           "Microsoft.AspNetCore.Components.WebAssembly.Authentication": "5.0.17",
           "Microsoft.Extensions.Http": "5.0.0",
           "Newtonsoft.Json": "13.0.2"
@@ -586,6 +600,19 @@
       }
     },
     "net6.0/browser-wasm": {
+      "Markdig/0.30.4": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Markdig.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Markdig.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Authorization/6.0.12": {
         "type": "package",
         "dependencies": {
@@ -1141,6 +1168,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "Markdig": "0.30.4",
           "Microsoft.AspNetCore.Components.WebAssembly.Authentication": "5.0.17",
           "Microsoft.Extensions.Http": "5.0.0",
           "Newtonsoft.Json": "13.0.2"
@@ -1165,6 +1193,29 @@
     }
   },
   "libraries": {
+    "Markdig/0.30.4": {
+      "sha512": "9LL7Mzubwf6QmOTZIqf+vERiinqPA1H+irBA38POhr93W/it00AvFWaCtF80+8VJTooFmcAJyZT2f60t1f88eQ==",
+      "type": "package",
+      "path": "markdig/0.30.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/Markdig.dll",
+        "lib/net452/Markdig.xml",
+        "lib/net6.0/Markdig.dll",
+        "lib/net6.0/Markdig.xml",
+        "lib/netcoreapp3.1/Markdig.dll",
+        "lib/netcoreapp3.1/Markdig.xml",
+        "lib/netstandard2.0/Markdig.dll",
+        "lib/netstandard2.0/Markdig.xml",
+        "lib/netstandard2.1/Markdig.dll",
+        "lib/netstandard2.1/Markdig.xml",
+        "markdig.0.30.4.nupkg.sha512",
+        "markdig.nuspec",
+        "markdig.png",
+        "readme.md"
+      ]
+    },
     "Microsoft.AspNetCore.Authorization/6.0.12": {
       "sha512": "BkHiJ7krAgsK/OfIz71ZL/ckrxBbeMtA+CDJwFNn0gq+UlmiPpxLBojBlkQCwExiEA+mnYCbwsHfnhcpq7zOXw==",
       "type": "package",
@@ -2037,8 +2088,8 @@
     },
     "MyBlog.Data.Shared/1.0.0": {
       "type": "project",
-      "path": "../../ByBlog.Data.Shared/MyBlog.Data.Shared.csproj",
-      "msbuildProject": "../../ByBlog.Data.Shared/MyBlog.Data.Shared.csproj"
+      "path": "../../MyBlog.Data.Shared/MyBlog.Data.Shared.csproj",
+      "msbuildProject": "../../MyBlog.Data.Shared/MyBlog.Data.Shared.csproj"
     },
     "MyBlogWebAssembly.Shared/1.0.0": {
       "type": "project",
@@ -2083,8 +2134,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\thonchel\\source\\repos\\MyBlog\\ByBlog.Data.Shared\\MyBlog.Data.Shared.csproj": {
-              "projectPath": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\ByBlog.Data.Shared\\MyBlog.Data.Shared.csproj"
+            "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Data.Shared\\MyBlog.Data.Shared.csproj": {
+              "projectPath": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Data.Shared\\MyBlog.Data.Shared.csproj"
             },
             "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Shared\\MyBlogWebAssembly.Shared.csproj": {
               "projectPath": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Shared\\MyBlogWebAssembly.Shared.csproj"

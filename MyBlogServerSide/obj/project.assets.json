@@ -1545,6 +1545,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "Markdig": "0.30.4",
           "Microsoft.AspNetCore.Components.WebAssembly.Authentication": "5.0.17",
           "Microsoft.Extensions.Http": "5.0.0",
           "Newtonsoft.Json": "13.0.2"
@@ -1554,6 +1555,20 @@
         },
         "runtime": {
           "bin/placeholder/MyBlog.Data.Shared.dll": {}
+        }
+      },
+      "MyBlog.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "5.0.17",
+          "MyBlog.Data.Shared": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MyBlog.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyBlog.Shared.dll": {}
         }
       }
     }
@@ -3546,8 +3561,13 @@
     },
     "MyBlog.Data.Shared/1.0.0": {
       "type": "project",
-      "path": "../ByBlog.Data.Shared/MyBlog.Data.Shared.csproj",
-      "msbuildProject": "../ByBlog.Data.Shared/MyBlog.Data.Shared.csproj"
+      "path": "../MyBlog.Data.Shared/MyBlog.Data.Shared.csproj",
+      "msbuildProject": "../MyBlog.Data.Shared/MyBlog.Data.Shared.csproj"
+    },
+    "MyBlog.Shared/1.0.0": {
+      "type": "project",
+      "path": "../MyBlog.Shared/MyBlog.Shared.csproj",
+      "msbuildProject": "../MyBlog.Shared/MyBlog.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3558,7 +3578,8 @@
       "Microsoft.EntityFrameworkCore.Design >= 7.0.1",
       "Microsoft.EntityFrameworkCore.Sqlite >= 7.0.1",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.1",
-      "MyBlog.Data >= 1.0.0"
+      "MyBlog.Data >= 1.0.0",
+      "MyBlog.Shared >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3590,6 +3611,9 @@
           "projectReferences": {
             "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.data\\MyBlog.Data.csproj": {
               "projectPath": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.data\\MyBlog.Data.csproj"
+            },
+            "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Shared\\MyBlog.Shared.csproj": {
+              "projectPath": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Shared\\MyBlog.Shared.csproj"
             }
           }
         }

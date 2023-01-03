@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "L+h3T/EUbD3/IDHBq3DhU2/ZrcLqcvdXFqnfMWIQyDe4R4lzzytz/47usCDeGg8esrPAZpsMguvpClvvwDT1Jg==",
+  "dgSpecHash": "Be2xkjdpV0qkGlQp40Utxb7u5nQkv0+DqpLSeuO8M5T6PkBYRD6xV6I6/wbqJJ4uSLfg51t8ILkUeFtWDQWNwg==",
   "success": true,
   "projectFilePath": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Server\\MyBlogWebAssembly.Server.csproj",
   "expectedPackageFiles": [
@@ -11,6 +11,7 @@
     "C:\\Users\\thonchel\\.nuget\\packages\\duende.identityserver.entityframework.storage\\5.2.0\\duende.identityserver.entityframework.storage.5.2.0.nupkg.sha512",
     "C:\\Users\\thonchel\\.nuget\\packages\\duende.identityserver.storage\\5.2.0\\duende.identityserver.storage.5.2.0.nupkg.sha512",
     "C:\\Users\\thonchel\\.nuget\\packages\\identitymodel\\5.1.0\\identitymodel.5.1.0.nupkg.sha512",
+    "C:\\Users\\thonchel\\.nuget\\packages\\markdig\\0.30.4\\markdig.0.30.4.nupkg.sha512",
     "C:\\Users\\thonchel\\.nuget\\packages\\microsoft.aspnetcore.apiauthorization.identityserver\\6.0.12\\microsoft.aspnetcore.apiauthorization.identityserver.6.0.12.nupkg.sha512",
     "C:\\Users\\thonchel\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.12\\microsoft.aspnetcore.authentication.jwtbearer.6.0.12.nupkg.sha512",
     "C:\\Users\\thonchel\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\5.0.0\\microsoft.aspnetcore.authentication.openidconnect.5.0.0.nupkg.sha512",

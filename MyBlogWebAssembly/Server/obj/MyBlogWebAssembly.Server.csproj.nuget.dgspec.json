@@ -4,14 +4,14 @@
     "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Server\\MyBlogWebAssembly.Server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\thonchel\\source\\repos\\MyBlog\\ByBlog.Data.Shared\\MyBlog.Data.Shared.csproj": {
+    "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Data.Shared\\MyBlog.Data.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\ByBlog.Data.Shared\\MyBlog.Data.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Data.Shared\\MyBlog.Data.Shared.csproj",
         "projectName": "MyBlog.Data.Shared",
-        "projectPath": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\ByBlog.Data.Shared\\MyBlog.Data.Shared.csproj",
+        "projectPath": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Data.Shared\\MyBlog.Data.Shared.csproj",
         "packagesPath": "C:\\Users\\thonchel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\ByBlog.Data.Shared\\obj\\",
+        "outputPath": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Data.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\thonchel\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Markdig": {
+              "target": "Package",
+              "version": "[0.30.4, )"
+            },
             "Microsoft.AspNetCore.Components.WebAssembly.Authentication": {
               "target": "Package",
               "version": "[5.0.17, )"
@@ -97,8 +101,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\thonchel\\source\\repos\\MyBlog\\ByBlog.Data.Shared\\MyBlog.Data.Shared.csproj": {
-                "projectPath": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\ByBlog.Data.Shared\\MyBlog.Data.Shared.csproj"
+              "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Data.Shared\\MyBlog.Data.Shared.csproj": {
+                "projectPath": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Data.Shared\\MyBlog.Data.Shared.csproj"
               }
             }
           }
@@ -194,8 +198,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\thonchel\\source\\repos\\MyBlog\\ByBlog.Data.Shared\\MyBlog.Data.Shared.csproj": {
-                "projectPath": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\ByBlog.Data.Shared\\MyBlog.Data.Shared.csproj"
+              "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Data.Shared\\MyBlog.Data.Shared.csproj": {
+                "projectPath": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Data.Shared\\MyBlog.Data.Shared.csproj"
               },
               "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Shared\\MyBlogWebAssembly.Shared.csproj": {
                 "projectPath": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Shared\\MyBlogWebAssembly.Shared.csproj"

@@ -4,7 +4,6 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <UserSecretsId>baa10118-3197-4b4a-ba18-db6794db2d09</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -20,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ByBlog.Data.Shared\MyBlog.Data.Shared.csproj" />
+    <ProjectReference Include="..\MyBlog.Data.Shared\MyBlog.Data.Shared.csproj" />
   </ItemGroup>
 
 

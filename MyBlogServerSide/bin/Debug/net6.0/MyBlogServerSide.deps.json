@@ -14,7 +14,8 @@
           "Microsoft.EntityFrameworkCore.Design": "7.0.1",
           "Microsoft.EntityFrameworkCore.Sqlite": "7.0.1",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.1",
-          "MyBlog.Data": "1.0.0"
+          "MyBlog.Data": "1.0.0",
+          "MyBlog.Shared": "1.0.0"
         },
         "runtime": {
           "MyBlogServerSide.dll": {}
@@ -925,10 +926,31 @@
           "Microsoft.AspNetCore.Diagnostics": "2.2.0",
           "Microsoft.EntityFrameworkCore.Sqlite": "7.0.1",
           "Microsoft.Extensions.Http": "7.0.0",
+          "MyBlog.Data.Shared": "1.0.0",
           "Newtonsoft.Json": "13.0.2"
         },
         "runtime": {
           "MyBlog.Data.dll": {}
+        }
+      },
+      "MyBlog.Data.Shared/1.0.0": {
+        "dependencies": {
+          "Markdig": "0.30.4",
+          "Microsoft.AspNetCore.Components.WebAssembly.Authentication": "6.0.1",
+          "Microsoft.Extensions.Http": "7.0.0",
+          "Newtonsoft.Json": "13.0.2"
+        },
+        "runtime": {
+          "MyBlog.Data.Shared.dll": {}
+        }
+      },
+      "MyBlog.Shared/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "6.0.1",
+          "MyBlog.Data.Shared": "1.0.0"
+        },
+        "runtime": {
+          "MyBlog.Shared.dll": {}
         }
       }
     }
@@ -1542,6 +1564,16 @@
       "hashPath": "system.text.json.7.0.0.nupkg.sha512"
     },
     "MyBlog.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MyBlog.Data.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MyBlog.Shared/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

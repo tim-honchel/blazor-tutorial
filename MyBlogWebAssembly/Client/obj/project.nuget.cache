@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "8wNzmP0jb+cCuJIqmYhpsYZoXgkuPio9RRBSKHJQ3nFyKsp5IsNxav+AnYfW+TmvuMVvji5oVyRHBKOkfTP2Jg==",
+  "dgSpecHash": "WSSpd3f1CHbEoGX8BcLZLCDtcDJUX9CobgyL/WMvc1veay+KzODUgOcyCduBYwrzcD7SZmK/v4H1TXigqYp0ig==",
   "success": true,
   "projectFilePath": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\MyBlogWebAssembly.Client.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\thonchel\\.nuget\\packages\\markdig\\0.30.4\\markdig.0.30.4.nupkg.sha512",
     "C:\\Users\\thonchel\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.12\\microsoft.aspnetcore.authorization.6.0.12.nupkg.sha512",
     "C:\\Users\\thonchel\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.12\\microsoft.aspnetcore.components.6.0.12.nupkg.sha512",
     "C:\\Users\\thonchel\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\6.0.12\\microsoft.aspnetcore.components.analyzers.6.0.12.nupkg.sha512",

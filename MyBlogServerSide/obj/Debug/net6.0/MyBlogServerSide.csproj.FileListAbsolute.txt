@@ -22,7 +22,6 @@ C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\obj\Debug\net6.0\staticwe
 C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\obj\Debug\net6.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
-C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\obj\Debug\net6.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
 C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\obj\Debug\net6.0\scopedcss\bundle\MyBlogServerSide.styles.css
 C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\obj\Debug\net6.0\scopedcss\projectbundle\MyBlogServerSide.bundle.scp.css
 C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\obj\Debug\net6.0\MyBlogServerSide.dll
@@ -92,7 +91,6 @@ C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\bin\Debug\net6.0\Microsof
 C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\bin\Debug\net6.0\Microsoft.AspNetCore.Components.WebAssembly.Authentication.dll
 C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\bin\Debug\net6.0\Microsoft.JSInterop.dll
 C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\bin\Debug\net6.0\System.IO.Pipelines.dll
-C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\obj\Debug\net6.0\MyBlogServerSide.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\bin\Debug\net6.0\Duende.IdentityServer.dll
 C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\bin\Debug\net6.0\Duende.IdentityServer.AspNetIdentity.dll
@@ -116,3 +114,8 @@ C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\bin\Debug\net6.0\Microsof
 C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\bin\Debug\net6.0\MyBlog.Shared.StaticWebAssets.xml
+C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\bin\Debug\net6.0\MyBlog.Data.Shared.dll
+C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\bin\Debug\net6.0\MyBlog.Shared.dll
+C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\bin\Debug\net6.0\MyBlog.Shared.pdb
+C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\bin\Debug\net6.0\MyBlog.Data.Shared.pdb

@@ -113,7 +113,7 @@ using Markdig;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 52 "C:\Users\thonchel\source\repos\MyBlog\MyBlog.Shared\Pages\Admin\BlogPostEdit.razor"
+#line 56 "C:\Users\thonchel\source\repos\MyBlog\MyBlog.Shared\Pages\Admin\BlogPostEdit.razor"
        
     public async Task SavePost()
     {

@@ -30,7 +30,11 @@
             {
                 <li>
                     @tag.Name
-                    @if (Post.Tags.Any(t => t.Id == tag.Id))
+                    @if (Post.Tags == null)
+                    {
+                        <button type="button" @onclick="@(()=> { Post.Tags.Add(tag); })">Add</button>
+                    }
+                    else if (Post.Tags.Any(t => t.Id == tag.Id))
                     {
                         <button type="button" @onclick="@(() => {Post.Tags.Remove(Post.Tags.Single(t=>t.Id==tag.Id)); })">Remove</button>
                     }

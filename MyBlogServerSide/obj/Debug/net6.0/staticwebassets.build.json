@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "uCu7fwK7fjyQV2UHlPB4FB/on1iBSqnJI2Igpo9ulRg=",
+  "Hash": "PgkSj6m2EhdyI2WkgSm/Otjgo3GgmTLziPPTCHggCBc=",
   "Source": "MyBlogServerSide",
   "BasePath": "_content/MyBlogServerSide",
   "Mode": "Default",
@@ -1122,6 +1122,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Shared\\wwwroot\\exampleJsInterop.js"
+    },
+    {
+      "Identity": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Shared\\wwwroot\\ItemList.razor.js",
+      "SourceId": "MyBlog.Shared",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Shared\\wwwroot\\",
+      "BasePath": "_content/MyBlog.Shared",
+      "RelativePath": "ItemList.razor.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Shared\\wwwroot\\ItemList.razor.js"
     },
     {
       "Identity": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogServerSide\\obj\\Debug\\net6.0\\scopedcss\\bundle\\MyBlogServerSide.styles.css",

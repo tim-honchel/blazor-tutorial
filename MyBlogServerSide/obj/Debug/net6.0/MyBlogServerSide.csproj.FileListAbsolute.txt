@@ -119,3 +119,5 @@ C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\bin\Debug\net6.0\MyBlog.D
 C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\bin\Debug\net6.0\MyBlog.Shared.dll
 C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\bin\Debug\net6.0\MyBlog.Shared.pdb
 C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\bin\Debug\net6.0\MyBlog.Data.Shared.pdb
+C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\bin\Debug\net6.0\libman.json
+C:\Users\thonchel\source\repos\MyBlog\MyBlogServerSide\obj\Debug\net6.0\MyBlogServerSide.MvcApplicationPartsAssemblyInfo.cs

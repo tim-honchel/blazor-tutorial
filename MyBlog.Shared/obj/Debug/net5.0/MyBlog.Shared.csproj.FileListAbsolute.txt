@@ -54,3 +54,4 @@ C:\Users\thonchel\source\repos\MyBlog\MyBlog.Shared\obj\Debug\net5.0\MyBlog.Shar
 C:\Users\thonchel\source\repos\MyBlog\MyBlog.Shared\obj\Debug\net5.0\refint\MyBlog.Shared.dll
 C:\Users\thonchel\source\repos\MyBlog\MyBlog.Shared\obj\Debug\net5.0\MyBlog.Shared.pdb
 C:\Users\thonchel\source\repos\MyBlog\MyBlog.Shared\obj\Debug\net5.0\ref\MyBlog.Shared.dll
+C:\Users\thonchel\source\repos\MyBlog\MyBlog.Shared\bin\Debug\net5.0\libman.json

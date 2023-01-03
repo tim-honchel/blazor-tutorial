@@ -1,22 +1,17 @@
 ﻿@typeparam ItemType
 @using System.Collections.Generic
+@inject IJSRuntime jsRuntime
 
 <h3>List</h3>
 <table>
     <Virtualize Items="@Items" Context="item">
         <tr>
             <td>
-                <button class="btn btn-primary"
-                    @onclick="@( () => {SelectEvent.InvokeAsync(item); })">
-                    Select
-                </button>
+                <button class="btn btn-primary"@onclick="@( () => {SelectEvent.InvokeAsync(item); })">Select</button>
             </td>
             <td> @ItemTemplate(item) </td>
             <td>
-                <button class="btn btn-danger"
-                    @onclick="@( () => {DeleteEvent.InvokeAsync(item); })">
-                    Delete
-                </button>
+                <button class="btn btn-danger" @onclick="@(async ()=>{ if (await ShouldDelete()) { await DeleteEvent.InvokeAsync(item); } })">Delete</button>
             </td>
         </tr>
     </Virtualize>
@@ -34,4 +29,11 @@
 
     [Parameter]
     public EventCallback<ItemType> SelectEvent { get; set; }
+
+    IJSObjectReference jsmodule;
+    private async Task<bool> ShouldDelete()
+    {
+        jsmodule = await jsRuntime.InvokeAsync<IJSObjectReference>("import", "/_content/MyBlog.Shared/ItemList.razor.js");
+        return await jsmodule.InvokeAsync<bool>("showConfirm", "Are you sure?");
+    }
 }

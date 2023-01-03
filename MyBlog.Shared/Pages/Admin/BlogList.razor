@@ -7,6 +7,7 @@
 <a href="/admin/blogposts/new">New blog post</a>
 <br />
 <ul>
+    <br />
     <Virtualize ItemsProvider="LoadPosts" Context="p">
         <li>@p.PublishDate <a href="/admin/blogposts/@p.Id">@p.Title</a></li>
     </Virtualize>

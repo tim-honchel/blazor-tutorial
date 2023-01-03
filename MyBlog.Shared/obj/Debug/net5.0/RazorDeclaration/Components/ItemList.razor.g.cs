@@ -89,7 +89,7 @@ using System.Collections.Generic;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 25 "C:\Users\thonchel\source\repos\MyBlog\MyBlog.Shared\Components\ItemList.razor"
+#line 20 "C:\Users\thonchel\source\repos\MyBlog\MyBlog.Shared\Components\ItemList.razor"
        
     [Parameter]
     public List<ItemType> Items { get; set; } = new List<ItemType>();
@@ -103,9 +103,17 @@ using System.Collections.Generic;
     [Parameter]
     public EventCallback<ItemType> SelectEvent { get; set; }
 
+    IJSObjectReference jsmodule;
+    private async Task<bool> ShouldDelete()
+    {
+        jsmodule = await jsRuntime.InvokeAsync<IJSObjectReference>("import", "/_content/MyBlog.Shared/ItemList.razor.js");
+        return await jsmodule.InvokeAsync<bool>("showConfirm", "Are you sure?");
+    }
+
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IJSRuntime jsRuntime { get; set; }
     }
 }
 #pragma warning restore 1591

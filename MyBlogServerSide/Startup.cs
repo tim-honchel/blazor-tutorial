@@ -45,6 +45,7 @@ namespace MyBlogServerSide
             services.AddDefaultIdentity<AppUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<MyBlogDbContext>();
             services.AddScoped<AuthenticationStateProvider, RevalidatingIdentityAuthenticationStateProvider<AppUser>>();
             services.AddScoped < IBrowserStorage,MyBlogProtectedBrowserStorage > ();
+            services.AddSingleton<IBlogNotificationService,BlazorServerBlogNotificationService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

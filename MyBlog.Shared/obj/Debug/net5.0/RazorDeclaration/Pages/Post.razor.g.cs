@@ -96,8 +96,15 @@ using Markdig;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 7 "C:\Users\thonchel\source\repos\MyBlog\MyBlog.Shared\Pages\Post.razor"
+using MyBlog.Shared.Interfaces;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Components.RouteAttribute("/post/{BlogPostId:int}")]
-    public partial class Post : global::Microsoft.AspNetCore.Components.ComponentBase
+    public partial class Post : global::Microsoft.AspNetCore.Components.ComponentBase, IDisposable
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(global::Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
@@ -105,7 +112,7 @@ using Markdig;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 21 "C:\Users\thonchel\source\repos\MyBlog\MyBlog.Shared\Pages\Post.razor"
+#line 24 "C:\Users\thonchel\source\repos\MyBlog\MyBlog.Shared\Pages\Post.razor"
        
     [Parameter]
     public int BlogPostId { get; set; }
@@ -119,14 +126,27 @@ using Markdig;
     MarkdownPipeline pipeline;
     protected override Task OnInitializedAsync()
     {
+        notificationService.BlogPostChanged += PostChanged;
         pipeline = new MarkdownPipelineBuilder().UseEmojiAndSmiley().Build();
         return base.OnInitializedAsync();
     }
-
+    private async void PostChanged(BlogPost post)
+    {
+        if (BlogPost.Id == post.Id)
+        {
+            BlogPost = post;
+            await InvokeAsync(() => this.StateHasChanged());
+        }
+    }
+    void IDisposable.Dispose()
+    {
+        notificationService.BlogPostChanged -= PostChanged;
+    }
 
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IBlogNotificationService notificationService { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager navman { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IMyBlogApi api { get; set; }
     }

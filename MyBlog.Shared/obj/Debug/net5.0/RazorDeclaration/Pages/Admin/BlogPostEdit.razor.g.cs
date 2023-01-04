@@ -104,6 +104,13 @@ using MyBlogServerSide.Components;
 #line hidden
 #nullable disable
 #nullable restore
+#line 11 "C:\Users\thonchel\source\repos\MyBlog\MyBlog.Shared\Pages\Admin\BlogPostEdit.razor"
+using MyBlog.Shared.Interfaces;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 1 "C:\Users\thonchel\source\repos\MyBlog\MyBlog.Shared\Pages\Admin\BlogPostEdit.razor"
            [Authorize]
 
@@ -120,7 +127,7 @@ using MyBlogServerSide.Components;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 58 "C:\Users\thonchel\source\repos\MyBlog\MyBlog.Shared\Pages\Admin\BlogPostEdit.razor"
+#line 60 "C:\Users\thonchel\source\repos\MyBlog\MyBlog.Shared\Pages\Admin\BlogPostEdit.razor"
        
     public async Task SavePost()
     {
@@ -158,6 +165,7 @@ using MyBlogServerSide.Components;
     {
         if (Post.Text != null)
         {
+            await notificationService.SendNotification(Post);
             markDownAsHTML = Markdig.Markdown.ToHtml(Post.Text, pipeline);
             if (Post.Id == 0)
             {
@@ -196,6 +204,7 @@ using MyBlogServerSide.Components;
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IBlogNotificationService notificationService { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private MyBlog.Shared.Interfaces.IBrowserStorage storage { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager manager { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IMyBlogApi api { get; set; }

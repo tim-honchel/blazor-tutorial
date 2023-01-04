@@ -8,6 +8,8 @@
 @using MyBlog.Data.Models
 @using Markdig;
 @using MyBlogServerSide.Components;
+@using MyBlog.Shared.Interfaces
+@inject IBlogNotificationService notificationService
 
 <EditForm Model="Post" OnValidSubmit="SavePost">
     <DataAnnotationsValidator />
@@ -92,6 +94,7 @@
     {
         if (Post.Text != null)
         {
+            await notificationService.SendNotification(Post);
             markDownAsHTML = Markdig.Markdown.ToHtml(Post.Text, pipeline);
             if (Post.Id == 0)
             {

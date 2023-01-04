@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\MyBlog.Shared.Tests.props" />
+</Project>

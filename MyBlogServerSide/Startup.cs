@@ -12,7 +12,6 @@ using MyBlog.Data.Models;
 //<authusing>
 using MyBlogServerSide.Authentication;
 //</authusing>
-using MyBlogServerSide.Data;
 //<IdentityServerUsing>
 using Microsoft.Extensions.Options;
 //</IdentityServerUsing>
@@ -38,7 +37,6 @@ namespace MyBlogServerSide
         {
             services.AddRazorPages();
             services.AddServerSideBlazor();
-            services.AddSingleton<WeatherForecastService>();
             //<AddMyBlogDataServices>
             services.AddDbContextFactory<MyBlogDbContext>(opt => opt.UseSqlite(Configuration.GetConnectionString("MyBlogDB")));
             services.AddScoped<IMyBlogApi, MyBlogApiServerSide>();

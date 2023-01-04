@@ -7,6 +7,7 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
+      "Blazored.SessionStorage.dll": "sha256-l3vyo6fcSWWhGiOMu5\/e4tQzZa7c+U1d1hHPGo74WFc=",
       "Markdig.dll": "sha256-Yw+GRvxgz3z1q0RtGw3n9XUh1wzzAOQJ7uMJJAJs770=",
       "Microsoft.AspNetCore.Authorization.dll": "sha256-QoBf8ZUgaWJCUGT3n4SViOqz82zpsFTQBgBR38X0SQM=",
       "Microsoft.AspNetCore.Components.dll": "sha256-3t65GOJ1de1VQDnrDvkwNxyXORtXOrSScKJat53tcj0=",
@@ -201,19 +202,19 @@
       "mscorlib.dll": "sha256-cx\/3nJhFns3tZhQNQOyiRyKJESKxOjLVufzWnri6KSA=",
       "netstandard.dll": "sha256-yWufW5W4SSfjocBcWTEDqnFwTd\/VYtLMc2Y9mPmlggc=",
       "System.Private.CoreLib.dll": "sha256-H009wzPwRoDZlwvpN4KLCsUwN7Y1AmjKB3PIEHA7ObQ=",
-      "MyBlog.Data.Shared.dll": "sha256-dVORzvdQz7jrtJW1qPab+naipzAd5eRqNur9mD1m6cM=",
-      "MyBlog.Shared.dll": "sha256-rJgnYCtFyOmYKZzzIOzU5Y7APB3gSBK3TepekBcLrm0=",
+      "MyBlog.Data.Shared.dll": "sha256-2x1Uws1ysPszebRefDWReMgs0uFNO1XBWe8dgI3Vu5M=",
+      "MyBlog.Shared.dll": "sha256-16aR7ZIJnaSwZ2mQUzpT1LFotNddnh6WL4coHeyIuMo=",
       "MyBlogWebAssembly.Shared.dll": "sha256-r\/LvU4UXSMTo6Oe29H7oXvgrHY0ugVPI5T7Hltj5xDE=",
-      "MyBlogWebAssembly.Client.dll": "sha256-hwM\/pUOuwikMwqFatiYtJTRmBaqhN+Cixk4pFaxVUTc="
+      "MyBlogWebAssembly.Client.dll": "sha256-Ihy8q3+HjmPNXObwVo0Ft+KIK7KP2eRYIUqIzV4VuK4="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "MyBlog.Data.Shared.pdb": "sha256-pIsvUDn1Q7reBkgvPo5SIi4CC\/DrMQZlaiVIb5NibKo=",
-      "MyBlog.Shared.pdb": "sha256-+WjfaVtGeHBrUhqGSlcIUYTVHN+p5doaxrtsSHmv2hI=",
+      "MyBlog.Data.Shared.pdb": "sha256-cOOxgS51tK8q5qGX7f7bZV6TAlZV+BbvEVHE7h4mFtk=",
+      "MyBlog.Shared.pdb": "sha256-Z5csff5D7qkdei38BqLPKGxG5VVdZ0YMY2g0A7QNDgk=",
       "MyBlogWebAssembly.Shared.pdb": "sha256-z03NnGc8VHcD8QpjIB5beFTEEFeBz2XMfzdiAt4DzXc=",
-      "MyBlogWebAssembly.Client.pdb": "sha256-jvnJJTHQSrfCAC3AUnPmF\/MH7NfW961QICpPPF7WPwU="
+      "MyBlogWebAssembly.Client.pdb": "sha256-4dghjj6Hw+fTE7PYFV1iQWoJf9gdKFBjhOcB0X0e3Iw="
     },
     "runtime": {
       "dotnet.6.0.11.nts7bn91vh.js": "sha256-F30V+6jU3jwJYFZoLuwMAqzTiOXu6q7zGgOdjYBofDI=",

@@ -76,22 +76,29 @@ using MyBlog.Shared.Components;
 #line hidden
 #nullable disable
 #nullable restore
-#line 6 "C:\Users\thonchel\source\repos\MyBlog\MyBlog.Shared\Pages\Admin\BlogPostEdit.razor"
+#line 7 "C:\Users\thonchel\source\repos\MyBlog\MyBlog.Shared\Pages\Admin\BlogPostEdit.razor"
 using MyBlog.Data.Interfaces;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 7 "C:\Users\thonchel\source\repos\MyBlog\MyBlog.Shared\Pages\Admin\BlogPostEdit.razor"
+#line 8 "C:\Users\thonchel\source\repos\MyBlog\MyBlog.Shared\Pages\Admin\BlogPostEdit.razor"
 using MyBlog.Data.Models;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 8 "C:\Users\thonchel\source\repos\MyBlog\MyBlog.Shared\Pages\Admin\BlogPostEdit.razor"
+#line 9 "C:\Users\thonchel\source\repos\MyBlog\MyBlog.Shared\Pages\Admin\BlogPostEdit.razor"
 using Markdig;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 10 "C:\Users\thonchel\source\repos\MyBlog\MyBlog.Shared\Pages\Admin\BlogPostEdit.razor"
+using MyBlogServerSide.Components;
 
 #line default
 #line hidden
@@ -113,7 +120,7 @@ using Markdig;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 56 "C:\Users\thonchel\source\repos\MyBlog\MyBlog.Shared\Pages\Admin\BlogPostEdit.razor"
+#line 58 "C:\Users\thonchel\source\repos\MyBlog\MyBlog.Shared\Pages\Admin\BlogPostEdit.razor"
        
     public async Task SavePost()
     {
@@ -147,9 +154,16 @@ using Markdig;
         return base.OnInitializedAsync();
     }
 
-    protected void UpdateHTML()
+    protected async Task UpdateHTMLAsync()
     {
-        markDownAsHTML =Markdig.Markdown.ToHtml(Post.Text, pipeline);
+        if (Post.Text != null)
+        {
+            markDownAsHTML = Markdig.Markdown.ToHtml(Post.Text, pipeline);
+            if (Post.Id == 0)
+            {
+                await storage.SetAsync("EditCurrentPost", Post);
+            }
+        }
     }
     bool hasTag(MyBlog.Data.Models.Tag tag)
     {
@@ -164,7 +178,15 @@ using Markdig;
             {
                 selectedCategory = Post.Category.Id;
             }
-            UpdateHTML();
+            await UpdateHTMLAsync();
+        }
+        else
+        {
+            var saved = await storage.GetAsync<BlogPost>("EditCurrentPost");
+            if (saved != null)
+            {
+                Post = saved;
+            }
         }
         Categories = await api.GetCategoriesAsync();
         Tags = await api.GetTagsAsync();
@@ -174,6 +196,7 @@ using Markdig;
 #line default
 #line hidden
 #nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private MyBlog.Shared.Interfaces.IBrowserStorage storage { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private NavigationManager manager { get; set; }
         [global::Microsoft.AspNetCore.Components.InjectAttribute] private IMyBlogApi api { get; set; }
     }

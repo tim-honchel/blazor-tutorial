@@ -3,9 +3,11 @@
 @page "/admin/blogposts/{Id:int}"
 @inject IMyBlogApi api
 @inject NavigationManager manager
+@inject MyBlog.Shared.Interfaces.IBrowserStorage storage
 @using MyBlog.Data.Interfaces
 @using MyBlog.Data.Models
 @using Markdig;
+@using MyBlogServerSide.Components;
 
 <EditForm Model="Post" OnValidSubmit="SavePost">
     <DataAnnotationsValidator />
@@ -47,7 +49,7 @@
         }
         
     </ul>
-    <InputTextArea @bind-Value="Post.Text"@onkeyup="UpdateHTML"></InputTextArea>
+    <InputTextAreaOnInput @bind-Value="Post.Text" @onkeyup="async () => { await UpdateHTMLAsync(); }"></InputTextAreaOnInput>
     <button type="submit" class="btn btn-success">Save</button>
 </EditForm>
 
@@ -86,9 +88,16 @@
         return base.OnInitializedAsync();
     }
 
-    protected void UpdateHTML()
+    protected async Task UpdateHTMLAsync()
     {
-        markDownAsHTML =Markdig.Markdown.ToHtml(Post.Text, pipeline);
+        if (Post.Text != null)
+        {
+            markDownAsHTML = Markdig.Markdown.ToHtml(Post.Text, pipeline);
+            if (Post.Id == 0)
+            {
+                await storage.SetAsync("EditCurrentPost", Post);
+            }
+        }
     }
     bool hasTag(MyBlog.Data.Models.Tag tag)
     {
@@ -103,7 +112,15 @@
             {
                 selectedCategory = Post.Category.Id;
             }
-            UpdateHTML();
+            await UpdateHTMLAsync();
+        }
+        else
+        {
+            var saved = await storage.GetAsync<BlogPost>("EditCurrentPost");
+            if (saved != null)
+            {
+                Post = saved;
+            }
         }
         Categories = await api.GetCategoriesAsync();
         Tags = await api.GetTagsAsync();

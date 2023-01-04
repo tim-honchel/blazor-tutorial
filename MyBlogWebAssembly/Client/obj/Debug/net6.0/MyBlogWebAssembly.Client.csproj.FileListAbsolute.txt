@@ -862,3 +862,8 @@ C:\Users\thonchel\source\repos\MyBlog\MyBlogWebAssembly\Client\obj\Debug\net6.0\
 C:\Users\thonchel\source\repos\MyBlog\MyBlogWebAssembly\Client\obj\Debug\net6.0\build-gz\pnwQkvwi.gz
 C:\Users\thonchel\source\repos\MyBlog\MyBlogWebAssembly\Client\obj\Debug\net6.0\build-gz\EUTdmBOR.gz
 C:\Users\thonchel\source\repos\MyBlog\MyBlogWebAssembly\Client\obj\Debug\net6.0\build-gz\uYBNB+V8.gz
+C:\Users\thonchel\source\repos\MyBlog\MyBlogWebAssembly\Client\bin\Debug\net6.0\wwwroot\_framework\Blazored.SessionStorage.dll
+C:\Users\thonchel\source\repos\MyBlog\MyBlogWebAssembly\Client\bin\Debug\net6.0\wwwroot\_framework\Blazored.SessionStorage.dll.gz
+C:\Users\thonchel\source\repos\MyBlog\MyBlogWebAssembly\Client\bin\Debug\net6.0\libman.json
+C:\Users\thonchel\source\repos\MyBlog\MyBlogWebAssembly\Client\bin\Debug\net6.0\Blazored.SessionStorage.dll
+C:\Users\thonchel\source\repos\MyBlog\MyBlogWebAssembly\Client\obj\Debug\net6.0\build-gz\ITH4UNMB.gz

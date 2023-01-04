@@ -1,7 +1,5 @@
-﻿using Microsoft.AspNetCore.ApiAuthorization.
-IdentityServer;
+﻿using Microsoft.AspNetCore.ApiAuthorization.IdentityServer;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 namespace MyBlogWebAssembly.Server.Controllers
 {
     public class OidcConfigurationController : Controller

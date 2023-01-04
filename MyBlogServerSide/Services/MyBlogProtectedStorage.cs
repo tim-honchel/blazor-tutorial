@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Components.Server.
-ProtectedBrowserStorage;
+﻿using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage;
 using MyBlog.Shared.Interfaces;
 using System.Threading.Tasks;
 

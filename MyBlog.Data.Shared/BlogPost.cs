@@ -2,9 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Collections.ObjectModel;
 
 namespace MyBlog.Data.Models
 {
@@ -18,6 +16,6 @@ namespace MyBlog.Data.Models
         public string Text { get; set; }
         public DateTime PublishDate { get; set; }
         public Category Category { get; set; }
-        public ICollection<Tag> Tags { get; set; }
+        public ICollection<Tag> Tags { get; set; } = new Collection<Tag>();
     }
 }

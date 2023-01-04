@@ -7,6 +7,7 @@ namespace MyBlogServerSide.Components
     public class CustomCssClassProvider<ProviderType>:ComponentBase where ProviderType: FieldCssClassProvider, new()
     {
         [CascadingParameter]
+        
         EditContext? CurrentEditContext { get; set; }
         public ProviderType Provider { get; set; } = new ProviderType();
         protected override void OnInitialized()

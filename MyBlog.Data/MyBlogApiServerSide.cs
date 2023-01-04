@@ -1,13 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using MyBlog.Data.Interfaces;
 using MyBlog.Data.Models;
-using MyBlog.Data.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-//using static System.Runtime.InteropServices.JavaScript.JSType; // included in template, causes error, don't think it's necessary
 
 namespace MyBlog.Data
 {
@@ -21,7 +14,15 @@ namespace MyBlog.Data
         public async Task<BlogPost> GetBlogPostAsync(int id)
         {
             using var context = factory.CreateDbContext();
-            return await context.BlogPosts.Include(p => p.Category).Include(p => p.Tags).FirstOrDefaultAsync(p => p.Id == id);
+            try
+            {
+                return await context.BlogPosts.Include(p => p.Category).Include(p => p.Tags).FirstOrDefaultAsync(p => p.Id == id);
+            }
+            catch (NullReferenceException)
+            {
+                throw new NullReferenceException();
+            }
+            
         }
         public async Task<int> GetBlogPostCountAsync()
         {

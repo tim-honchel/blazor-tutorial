@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "AO7JaEny8spqq0PrI6NQuV3Shc4WLjDVT1bQIh0ByDE=",
+  "Hash": "cAqlTs8QttYHWz/kNcpc5NTqfsWZVpYKh99pbiwsyUs=",
   "Source": "MyBlogWebAssembly.Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -104,6 +104,23 @@
       "OriginalItemSpec": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Shared\\wwwroot\\exampleJsInterop.js"
     },
     {
+      "Identity": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Shared\\wwwroot\\ItemList.razor.js",
+      "SourceId": "MyBlog.Shared",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Shared\\wwwroot\\",
+      "BasePath": "_content/MyBlog.Shared",
+      "RelativePath": "ItemList.razor.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlog.Shared\\wwwroot\\ItemList.razor.js"
+    },
+    {
       "Identity": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\blazor.boot.json",
       "SourceId": "MyBlogWebAssembly.Client",
       "SourceType": "Computed",
@@ -136,6 +153,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\thonchel\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\6.0.10\\build\\net6.0\\blazor.webassembly.js"
+    },
+    {
+      "Identity": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Blazored.SessionStorage.dll",
+      "SourceId": "MyBlogWebAssembly.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Blazored.SessionStorage.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\thonchel\\.nuget\\packages\\blazored.sessionstorage\\2.3.0\\lib\\net6.0\\Blazored.SessionStorage.dll"
     },
     {
       "Identity": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\dotnet.6.0.11.nts7bn91vh.js",
@@ -5372,6 +5406,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Diagnostics.StackTrace.dll"
+    },
+    {
+      "Identity": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\obj\\Debug\\net6.0\\build-gz\\ITH4UNMB.gz",
+      "SourceId": "MyBlogWebAssembly.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Blazored.SessionStorage.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Blazored.SessionStorage.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Blazored.SessionStorage.dll"
     },
     {
       "Identity": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\obj\\Debug\\net6.0\\build-gz\\Iu94RzKA.gz",

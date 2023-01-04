@@ -128,3 +128,5 @@ C:\Users\thonchel\source\repos\MyBlog\MyBlogWebAssembly\Server\bin\Debug\net6.0\
 C:\Users\thonchel\source\repos\MyBlog\MyBlogWebAssembly\Server\bin\Debug\net6.0\MyBlog.Shared.dll
 C:\Users\thonchel\source\repos\MyBlog\MyBlogWebAssembly\Server\bin\Debug\net6.0\MyBlog.Data.Shared.pdb
 C:\Users\thonchel\source\repos\MyBlog\MyBlogWebAssembly\Server\bin\Debug\net6.0\MyBlog.Shared.pdb
+C:\Users\thonchel\source\repos\MyBlog\MyBlogWebAssembly\Server\bin\Debug\net6.0\libman.json
+C:\Users\thonchel\source\repos\MyBlog\MyBlogWebAssembly\Server\bin\Debug\net6.0\Blazored.SessionStorage.dll

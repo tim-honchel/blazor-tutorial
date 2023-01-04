@@ -90,6 +90,13 @@ using MyBlog.Data.Interfaces;
 #line hidden
 #nullable disable
 #nullable restore
+#line 6 "C:\Users\thonchel\source\repos\MyBlog\MyBlog.Shared\Pages\Admin\CategoryList.razor"
+using MyBlogServerSide.Components;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 1 "C:\Users\thonchel\source\repos\MyBlog\MyBlog.Shared\Pages\Admin\CategoryList.razor"
            [Authorize]
 
@@ -105,7 +112,7 @@ using MyBlog.Data.Interfaces;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 29 "C:\Users\thonchel\source\repos\MyBlog\MyBlog.Shared\Pages\Admin\CategoryList.razor"
+#line 30 "C:\Users\thonchel\source\repos\MyBlog\MyBlog.Shared\Pages\Admin\CategoryList.razor"
        
     private List<Category> Items { get; set; } = new List<Category>();
     public Category Item { get; set; } = new Category();

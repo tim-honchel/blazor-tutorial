@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using MyBlog.Data.Interfaces;
 using MyBlog.Data.Models;
-using System.Collections.Generic;
 using Microsoft.AspNetCore.Authorization;
 
 namespace MyBlogWebAssembly.Server.Controllers

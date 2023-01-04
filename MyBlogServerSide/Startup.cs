@@ -16,6 +16,8 @@ using MyBlogServerSide.Data;
 //<IdentityServerUsing>
 using Microsoft.Extensions.Options;
 //</IdentityServerUsing>
+using MyBlog.Shared.Interfaces;
+using MyBlogServerSide.Services;
 
 namespace MyBlogServerSide
 {
@@ -44,6 +46,7 @@ namespace MyBlogServerSide
             services.AddDbContext<MyBlogDbContext>(opt => opt.UseSqlite(Configuration.GetConnectionString("MyBlogDB")));
             services.AddDefaultIdentity<AppUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<MyBlogDbContext>();
             services.AddScoped<AuthenticationStateProvider, RevalidatingIdentityAuthenticationStateProvider<AppUser>>();
+            services.AddScoped < IBrowserStorage,MyBlogProtectedBrowserStorage > ();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

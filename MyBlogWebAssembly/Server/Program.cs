@@ -1,4 +1,3 @@
-using Microsoft.AspNetCore.ResponseCompression;
 using MyBlogWebAssembly.Server;
 
 public class Program

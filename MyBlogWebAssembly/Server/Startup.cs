@@ -1,18 +1,13 @@
-﻿using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.ResponseCompression;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
+﻿using Microsoft.EntityFrameworkCore;
 using MyBlog.Data;
-using System.Linq;
 using MyBlog.Data.Interfaces;
 using MyBlog.Data.Models;
 using Microsoft.AspNetCore.Authentication;
 using System.IdentityModel.Tokens.Jwt;
 using Microsoft.AspNetCore.Identity;
+using System.Text.Json.Serialization;
+using Microsoft.AspNetCore.ResponseCompression;
+using MyBlogWebAssembly.Server.Hubs;
 
 namespace MyBlogWebAssembly.Server
 {
@@ -30,6 +25,7 @@ namespace MyBlogWebAssembly.Server
         public void ConfigureServices(IServiceCollection services)
         {
 
+            services.AddSignalR().AddJsonProtocol(options => {options.PayloadSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve; options.PayloadSerializerOptions.PropertyNamingPolicy =null;});
             services.AddDbContextFactory<MyBlogDbContext>(opt => opt.UseSqlite(Configuration.GetConnectionString("MyBlogDB")));
             services.AddScoped<IMyBlogApi, MyBlogApiServerSide>();
 
@@ -49,6 +45,7 @@ namespace MyBlogWebAssembly.Server
             });
             JwtSecurityTokenHandler.DefaultInboundClaimFilter.Remove("role");
             services.AddAuthentication().AddIdentityServerJwt();
+            services.AddResponseCompression(opts => {opts.MimeTypes = ResponseCompressionDefaults.MimeTypes.Concat(new[] { "application/octet-stream" });});
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -80,6 +77,7 @@ namespace MyBlogWebAssembly.Server
             {
                 endpoints.MapRazorPages();
                 endpoints.MapControllers();
+                endpoints.MapHub<BlogNotificationHub>("/BlogNotificationHub");
                 endpoints.MapFallbackToFile("index.html");
             });
         }

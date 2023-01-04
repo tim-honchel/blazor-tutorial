@@ -23,5 +23,6 @@ builder.Services.AddBlazoredSessionStorage(options =>
     options.JsonSerializerOptions.PropertyNamingPolicy = null;
 });
 builder.Services.AddScoped<IBrowserStorage, MyBlogBrowserStorage>();
+builder.Services.AddSingleton<IBlogNotificationService, BlazorWebAssemblyBlogNotificationService>();
 
 await builder.Build().RunAsync();

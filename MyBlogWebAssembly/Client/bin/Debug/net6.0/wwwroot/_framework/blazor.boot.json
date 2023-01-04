@@ -211,18 +211,18 @@
       "netstandard.dll": "sha256-yWufW5W4SSfjocBcWTEDqnFwTd\/VYtLMc2Y9mPmlggc=",
       "System.Private.CoreLib.dll": "sha256-H009wzPwRoDZlwvpN4KLCsUwN7Y1AmjKB3PIEHA7ObQ=",
       "MyBlog.Data.Shared.dll": "sha256-\/aGPaPAVizuJtY671BoAEH0esTCJvxiKPc8w4QgrbPQ=",
-      "MyBlog.Shared.dll": "sha256-bTBOY4x\/94EkPebnvVUDAa\/o6NmKhbCahEnwMkb5aAk=",
+      "MyBlog.Shared.dll": "sha256-4Xl\/OSOHKMyDTFKgOgGSWZIH5kXq8lMpwVmMubMi+Bc=",
       "MyBlogWebAssembly.Shared.dll": "sha256-zX4uebpRhrBV5SKOxyyoPfLwY7b0d6nfjXGjwpwUqQQ=",
-      "MyBlogWebAssembly.Client.dll": "sha256-svMcxkynWxamWgQBWjRIZTYD1\/hv955Ao\/weO3XOVHY="
+      "MyBlogWebAssembly.Client.dll": "sha256-\/N5UOm6lbb+moxmpFKavNp+4cnGmTYPyb7jZ5jM1X0U="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
       "MyBlog.Data.Shared.pdb": "sha256-bpW8AHgKa6+crhN2+g0hQlyFnLK6ynR+Uv3EzsJ\/GQk=",
-      "MyBlog.Shared.pdb": "sha256-XCjujd2Yv8iGtiIXMI\/7JdAZEyr8cMTEjCrNKEYOL2I=",
+      "MyBlog.Shared.pdb": "sha256-T1IGJzhxRUF2n6QYEY9H4oT+s7LvZ4bwikM6+9td6hE=",
       "MyBlogWebAssembly.Shared.pdb": "sha256-DcsRUKrVbzMHzXMQCnpi9tq4aeBxZdBKZW6tDDCxF48=",
-      "MyBlogWebAssembly.Client.pdb": "sha256-VVrzb9nkZTn\/xPvbixLbltIt8Vg+db6HbhtT9PXqg\/w="
+      "MyBlogWebAssembly.Client.pdb": "sha256-vifJN8X1pR98cIVd\/T8jrT0lZ1G7bJWXrvHAG+ymZAU="
     },
     "runtime": {
       "dotnet.6.0.11.nts7bn91vh.js": "sha256-F30V+6jU3jwJYFZoLuwMAqzTiOXu6q7zGgOdjYBofDI=",

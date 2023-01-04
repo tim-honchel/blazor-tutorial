@@ -41,7 +41,8 @@ namespace MyBlogWebAssembly.Server
             {
                 options.IdentityResources["openid"].UserClaims.Add("name");
                 options.ApiResources.Single().UserClaims.Add("name");
-                options.IdentityResources["openid"].UserClaims.Add("role"); options.ApiResources.Single().UserClaims.Add("role");
+                options.IdentityResources["openid"].UserClaims.Add("role"); 
+                options.ApiResources.Single().UserClaims.Add("role");
             });
             JwtSecurityTokenHandler.DefaultInboundClaimFilter.Remove("role");
             services.AddAuthentication().AddIdentityServerJwt();

@@ -55,3 +55,5 @@ C:\Users\thonchel\source\repos\MyBlog\MyBlog.Shared\obj\Debug\net5.0\refint\MyBl
 C:\Users\thonchel\source\repos\MyBlog\MyBlog.Shared\obj\Debug\net5.0\MyBlog.Shared.pdb
 C:\Users\thonchel\source\repos\MyBlog\MyBlog.Shared\obj\Debug\net5.0\ref\MyBlog.Shared.dll
 C:\Users\thonchel\source\repos\MyBlog\MyBlog.Shared\bin\Debug\net5.0\libman.json
+C:\Users\thonchel\source\repos\MyBlog\MyBlog.Shared\obj\Debug\net5.0\RazorDeclaration\Pages\ThrowException.razor.g.cs
+C:\Users\thonchel\source\repos\MyBlog\MyBlog.Shared\obj\Debug\net5.0\Razor\Pages\ThrowException.razor.g.cs

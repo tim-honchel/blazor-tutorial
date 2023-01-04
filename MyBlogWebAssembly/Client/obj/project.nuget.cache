@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "g5lD3+e+jvSM2HqJ3zJAcYutsDZ1pQVVZg0bVDUR7yBF5Qi9RMoScLvs8L4MnzxPk79QMA3JV+cSPEbhf3aUsA==",
+  "dgSpecHash": "ZGV+u5wXQKgdU6maTrzLHAf8CrE+SL8oRfsR2MYiHAuWGc0Q3I4AGxjFCLEJZ79LSGjKJF2HI6d3xlUKr1HxIA==",
   "success": true,
   "projectFilePath": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Client\\MyBlogWebAssembly.Client.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\thonchel\\.nuget\\packages\\blazored.sessionstorage\\2.3.0\\blazored.sessionstorage.2.3.0.nupkg.sha512",
     "C:\\Users\\thonchel\\.nuget\\packages\\markdig\\0.30.4\\markdig.0.30.4.nupkg.sha512",
     "C:\\Users\\thonchel\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.12\\microsoft.aspnetcore.authorization.6.0.12.nupkg.sha512",
     "C:\\Users\\thonchel\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.12\\microsoft.aspnetcore.components.6.0.12.nupkg.sha512",

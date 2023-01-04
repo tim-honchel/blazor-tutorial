@@ -5,6 +5,9 @@ using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
 using MyBlogWebAssembly.Client.Authentication;
 using MyBlog.Data.Interfaces;
 using MyBlog.Data;
+using Blazored.SessionStorage;
+using MyBlog.Shared.Interfaces;
+using MyBlogWebAssembly.Client.Services;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#app");
@@ -14,5 +17,11 @@ builder.Services.AddHttpClient("Authenticated", client => client.BaseAddress = n
 builder.Services.AddHttpClient("Public", client => client.BaseAddress = new Uri(builder.HostEnvironment.BaseAddress));
 builder.Services.AddApiAuthorization().AddAccountClaimsPrincipalFactory < RoleAccountClaimsPrincipalFactory > ();
 builder.Services.AddScoped<IMyBlogApi, MyBlogApiClientSide>();
+builder.Services.AddBlazoredSessionStorage(options =>
+{
+    options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve;
+    options.JsonSerializerOptions.PropertyNamingPolicy = null;
+});
+builder.Services.AddScoped<IBrowserStorage, MyBlogBrowserStorage>();
 
 await builder.Build().RunAsync();

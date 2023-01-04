@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "2XONeftw81TdXp2rSuocV7prYNrapo9kl0Fo4fmN3ANudCRLpne2BNH+MtCKfgFfJA5Cov7lH7xQ9zN2cdz4SQ==",
+  "dgSpecHash": "N/gpCQFSHiuWpoV+Xd2zFXz7lek8ASfrNUf7dqouyMFSaiwGn6mvLqszJadAP/Bdnc9pAa8yVSCXhgy6YUorPw==",
   "success": true,
   "projectFilePath": "C:\\Users\\thonchel\\source\\repos\\MyBlog\\MyBlogWebAssembly\\Server\\MyBlogWebAssembly.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\thonchel\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
+    "C:\\Users\\thonchel\\.nuget\\packages\\blazored.sessionstorage\\2.3.0\\blazored.sessionstorage.2.3.0.nupkg.sha512",
     "C:\\Users\\thonchel\\.nuget\\packages\\duende.identityserver\\5.2.0\\duende.identityserver.5.2.0.nupkg.sha512",
     "C:\\Users\\thonchel\\.nuget\\packages\\duende.identityserver.aspnetidentity\\5.2.0\\duende.identityserver.aspnetidentity.5.2.0.nupkg.sha512",
     "C:\\Users\\thonchel\\.nuget\\packages\\duende.identityserver.entityframework\\5.2.0\\duende.identityserver.entityframework.5.2.0.nupkg.sha512",
